@@ -25,3 +25,14 @@ GIVEN: I am on the detailed game profile page.
 	WHEN: i decide to purchase the game
 THEN: clicking on the provided link for trusted (amazon sellers?)
 ```
+
+## Built in
+- HTML
+- CSS
+- Javascript
+- Tailwind CSS
+- Server-Side APIs
+
+## APIs Used
+- [RAWG game database API](https://rawg.io/apidocs)
+- Amazon
