@@ -16,10 +16,10 @@ Imagine browsing a massive game library: searching for your next adventure with 
 
 
 ## Team Members
-- [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345) (Project Manager)
-- [Darren Doan](https://github.com/darrendoan)
-- [Muhamad Sahid](https://github.com/BrxwnSugxr)
-- [Suyash Maharjan](https://github.com/SimpleSuyash)
+1. [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345) (Project Manager)
+2. [Darren Doan](https://github.com/darrendoan)
+3. [Muhamad Sahid](https://github.com/BrxwnSugxr)
+4. [Suyash Maharjan](https://github.com/SimpleSuyash)
 
 
 ## User Story
@@ -63,10 +63,11 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 ## Output
 
 ## Strength and Weakness
+Yukitoshi Imaizumi-Zhou:
 Darren Doan:
 Muhamad Sahid:
 Suyash Maharjan:
-Yukitoshi Imaizumi-Zhou:
+
 
 
 ## Installation
