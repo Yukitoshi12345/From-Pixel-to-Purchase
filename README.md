@@ -36,3 +36,14 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 ## APIs Used
 - [RAWG game database API](https://rawg.io/apidocs)
 - Amazon
+
+## Screenshot
+
+## Output
+
+## Installation
+The project was uploaded to [GitHub](https://github.com/) at the following repository:
+[https://github.com/yukitoshi12345/From-Pixel-to-Purchase/](https://github.com/yukitoshi12345/From-Pixel-to-Purchase)
+
+You can access the deployed application with the GitHub Pages link:
+[https://yukitoshi12345.github.io/From-Pixel-to-Purchase/](https://yukitoshi12345.github.io/From-Pixel-to-Purchase/)
