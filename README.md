@@ -16,7 +16,11 @@ Imagine browsing a massive game library: searching for your next adventure with 
 
 
 ## Team Members
-Group 4: Darren Doan, Muhamad Sahid, Suyash Maharjan, Yukitoshi Imaizumi-Zhou 
+- [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345) (Project Manager)
+- [Darren Doan](https://github.com/darrendoan)
+- [Muhamad Sahid](https://github.com/BrxwnSugxr)
+- [Suyash Maharjan](https://github.com/SimpleSuyash)
+
 
 ## User Story
 ```md
