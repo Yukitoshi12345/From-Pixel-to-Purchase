@@ -51,6 +51,7 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 - HTML
 - CSS
 - Javascript
+- JQuery
 - Tailwind CSS
 - Server-Side APIs
 
