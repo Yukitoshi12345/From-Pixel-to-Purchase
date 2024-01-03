@@ -1,5 +1,16 @@
 # From Pixel to Purchase
+Imagine browsing a massive game library: searching for your next adventure with intuitive suggestions, diving into detailed profiles brimming with information, and effortlessly purchasing your chosen game through a trusted provider. Sounds seamless, right? These scenarios explore just that, outlining a user-friendly journey from discovery to purchase.
 
+## Table of Contents
+
+- [User Story](#user-story)
+- [Objectives](#objectives)
+- [Built in](#built-in)
+- [APIs Used](#apis-used)
+- [Screenshot](#screenshot)
+- [Output](#output)
+- [Installation](#installation)
+- [License](#license)
 
 ## User Story
 ```md
