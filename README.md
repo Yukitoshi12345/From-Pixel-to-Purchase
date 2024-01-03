@@ -3,14 +3,20 @@ Imagine browsing a massive game library: searching for your next adventure with 
 
 ## Table of Contents
 
+- [Team Members](#team-members)
 - [User Story](#user-story)
 - [Objectives](#objectives)
 - [Built in](#built-in)
 - [APIs Used](#apis-used)
 - [Screenshot](#screenshot)
 - [Output](#output)
+- [Strength and Weakness](#strength-and-weakness)
 - [Installation](#installation)
 - [License](#license)
+
+
+## Team Members
+Group 4: Darren Doan, Muhamad Sahid, Suyash Maharjan, Yukitoshi Imaizumi-Zhou 
 
 ## User Story
 ```md
@@ -51,6 +57,13 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 ## Screenshot
 
 ## Output
+
+## Strength and Weakness
+Darren Doan:
+Muhamad Sahid:
+Suyash Maharjan:
+Yukitoshi Imaizumi-Zhou:
+
 
 ## Installation
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
