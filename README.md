@@ -75,10 +75,10 @@ Yukitoshi Imaizumi-Zhou: Project Manager, Full-Stack Development
 
 ## Installation
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
-[https://github.com/yukitoshi12345/From-Pixel-to-Purchase/](https://github.com/yukitoshi12345/From-Pixel-to-Purchase)
+[https://github.com/yukitoshi12345/Video-Game-Finder/](https://github.com/yukitoshi12345/Video-Game-Finder)
 
 You can access the deployed application with the GitHub Pages link:
-[https://yukitoshi12345.github.io/From-Pixel-to-Purchase/](https://yukitoshi12345.github.io/From-Pixel-to-Purchase/)
+[https://yukitoshi12345.github.io/Video-Game-Finder/](https://yukitoshi12345.github.io/Video-Game-Finder/)
 
 ## License
-This project is licensed under the [MIT License](https://github.com/Yukitoshi12345/From-Pixel-to-Purchase/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/Yukitoshi12345/Video-Game-Finder/blob/main/LICENSE).
