@@ -1,4 +1,3 @@
-
 $(document).ready(()=>{
     const key = "66d3737f6f13454880d0fe3f9948fa06";
 
@@ -12,8 +11,13 @@ $(document).ready(()=>{
     const returnBtn = $(".return");
     // const nextBtn = $(".next");
     // const previousBtn =$(".previous");
+
     const modalBoxEl = $(".modal-box");
     const dialogBoxEl = $(".modal");
+
+    // const modalBoxEl = $(".modal-box");
+    // const dialogBoxEl = $("#my_modal_5");
+
     const pageNavEl = $(".page-nav");
     const errMsg = $(".error-text");
 
@@ -138,8 +142,13 @@ $(document).ready(()=>{
         gamesContainer.html("");
         for(result of data.results){
             gamesContainer.append(`
+
                 <div class="card card-compact bg-base-100 shadow-xl md:col-span-1 hover:opacity-50">
                         <figure><img src="${result.background_image}" alt="${result.name}" ></figure>
+
+                <div class="card card-compact bg-base-100 shadow-xl md:col-span-1">
+                        <figure><img src="${result.background_image}" alt="${result.name}" /></figure>
+
                         <div class="card-body">
                         <h2 class="card-title">${result.name}</h2>
                         <ul>
@@ -240,6 +249,7 @@ $(document).ready(()=>{
         }
 
     }
+
     function validateGameNameInput(){
         const input = inputEl.val().trim();
         if(input.length >=1){
@@ -248,17 +258,31 @@ $(document).ready(()=>{
            inputEl.val("");
            inputEl.focus();
            console.log("after validation false");
+
+    function validateGameNameInput(input){
+        if(input.trim().length >=1){
+            return true;
+        }else{
+           inputEl.setCustomValidity(false);
+
            return false;
         }
     }
 
     //when search button is pressed
     searchBtn.on("click", ()=>{
+
         // console.log("button clicked");
         const searchQuery = inputEl.val();
         // console.log("search query " + searchQuery);
         // console.log(validateGameNameInput());
         if(validateGameNameInput()){
+
+        console.log("button clicked");
+        const searchQuery = inputEl.val();
+        console.log("search query " + searchQuery);
+        if(validateGameNameInput(searchQuery)){
+
             saveTheSearchToLS(searchQuery);
             displayRecentSearches();
             fetchGames(searchQuery);
@@ -319,8 +343,12 @@ $(document).ready(()=>{
     //     modalBoxEl.prepend(img);
     //     dialogBoxEl.showModal();
     // });
+
     
     // gamesContainer.on("click","img", dialogBoxEl.showModal());
+
+
+    // // gamesContainer.on("click","img", dialogBoxEl.showModal);
 
      returnBtn.on("click", ()=>{
        showOrHidePage("index");
@@ -328,5 +356,9 @@ $(document).ready(()=>{
      });
 
     displayRecentSearches();
+
+});
+
+
 });
 
