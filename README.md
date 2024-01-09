@@ -17,9 +17,9 @@ Imagine browsing a massive game library: searching for your next adventure with 
 
 ## Team Members
 1. [Darren Doan](https://github.com/darrendoan) (Full-Stack Development)
-2. [Muhamad Sahid](https://github.com/BrxwnSugxr) (UI/UX, Full-Stack Development)
+2. [Muhamad Sahid](https://github.com/BrxwnSugxr) (Full-Stack Development)
 3. [Suyash Maharjan](https://github.com/SimpleSuyash) (Full-Stack Development)
-4. [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345) (Project Manager)
+4. [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345) (Project Manager, Full-Stack Development)
 
 
 
@@ -66,9 +66,9 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 
 ## Roles
 Darren Doan: Full-Stack Development 
-Muhamad Sahid: UI/UX, Full-Stack Development 
+Muhamad Sahid: Full-Stack Development 
 Suyash Maharjan: Full-Stack Development 
-Yukitoshi Imaizumi-Zhou: Project Manager, full-stack development stack
+Yukitoshi Imaizumi-Zhou: Project Manager, Full-Stack Development
 
 
 
