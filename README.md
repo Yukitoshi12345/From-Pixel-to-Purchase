@@ -1,4 +1,4 @@
-![HTML](https://img.shields.io/badge/HTML-5-green) ![CSS](https://img.shields.io/badge/CSS-5-green) ![JavaScript](https://img.shields.io/badge/Javascript-green) ![Jquery](https://img.shields.io/badge/Jquery-green) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-green) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-green) ![Youtube APIs](https://img.shields.io/badge/Youtube-APIs-green) ![Marvel APIs](https://img.shields.io/badge/Marvel-APIs-green) 
+![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript JQuerry](https://img.shields.io/badge/Javascript-JQuery-orange) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-black) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-black) ![Youtube APIs](https://img.shields.io/badge/Youtube-APIs-black) ![Marvel APIs](https://img.shields.io/badge/Marvel-APIs-black) 
 
 
 # The University of Gaming
@@ -6,15 +6,13 @@
 ## Introduction
 Imagine browsing a massive game library: searching for your next adventure with intuitive suggestions, diving into detailed profiles brimming with information, and effortlessly purchasing your chosen game through a trusted provider. Sounds seamless, right? These scenarios explore just that, outlining a user-friendly journey from discovery to purchase.
 
-## Screenshot
+### Screenshot
 
 ## Table of Contents
 
-- [User Story](#user-story)
-- [Objectives](#objectives)
+- [Concept](#Concept)
 - [Team Members](#team-members)
 - [Built in](#built-in)
-- [APIs Used](#apis-used)
 - [Installation](#installation)
 - [License](#license)
 
@@ -22,14 +20,14 @@ Imagine browsing a massive game library: searching for your next adventure with 
 
 
 
-## User Story
+### User Story
 ```md
 AS A gaming fanatic with a busy schedule 
 I WANT to search/view for a game  
 SO THAT I can view the game in detail and/or purchase the game.  
 ```
 
-## Objectives
+### Objectives
 ```md
 Scenario: Exploring Game Title
 GIVEN: I am on the homepage of (name)
@@ -47,7 +45,7 @@ GIVEN: I am on the detailed game profile page.
 THEN: clicking on the provided link for trusted (amazon sellers?)
 ```
 
-## Team Members
+### Team Members
 
 | Team Members         | Roles                                                                |
 | -------------------- | ------------------------------------------------------------------------ |
@@ -59,15 +57,15 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 
 
 
-## APIs Used
+### APIs Used
 - [RAWG game database API](https://rawg.io/apidocs)
-- Marvel API(https://developer.marvel.com/)
-- Youtube API
+- [Marvel API](https://developer.marvel.com/)
+- [Youtube API](https://developers.google.com/youtube/v3)
 
   
 
 
-## Built in
+### Built in
 - `HTML:` The foundational canvas upon which this digital masterpiece is painted, providing structure and elegance.
 - `CSS:` An artistic touch, seamlessly intertwining with HTML to bestow a visually captivating aesthetic.
 - `Javascript:` The soul of this creation, breathing life and dynamism into every line of code.
@@ -77,7 +75,7 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 
 
 
-## Installation
+### Installation
 
 | Steps                | Details                                                                  |
 | -------------------- | ------------------------------------------------------------------------ |
