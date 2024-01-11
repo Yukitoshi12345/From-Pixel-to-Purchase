@@ -58,7 +58,8 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 
 ## APIs Used
 - [RAWG game database API](https://rawg.io/apidocs)
-- Amazon
+- GameSpot API
+- Youtube API
 
 ## Screenshot
 
