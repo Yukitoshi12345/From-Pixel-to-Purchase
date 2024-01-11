@@ -75,10 +75,10 @@ Yukitoshi Imaizumi-Zhou: Project Manager, Full-Stack Development
 
 ## Installation
 The project was uploaded to [GitHub](https://github.com/) at the following repository:
-[https://github.com/yukitoshi12345/Video-Game-Finder/](https://github.com/yukitoshi12345/Video-Game-Finder)
+[https://github.com/yukitoshi12345/The-University-of-Gaming/](https://github.com/yukitoshi12345/The-University-of-Gaming)
 
 You can access the deployed application with the GitHub Pages link:
-[https://yukitoshi12345.github.io/Video-Game-Finder/](https://yukitoshi12345.github.io/Video-Game-Finder/)
+[https://yukitoshi12345.github.io/The-University-of-Gaming/](https://yukitoshi12345.github.io/The-University-of-Gaming/)
 
 ## License
-This project is licensed under the [MIT License](https://github.com/Yukitoshi12345/Video-Game-Finder/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/Yukitoshi12345/The-University-of-Gaming/blob/main/LICENSE).
