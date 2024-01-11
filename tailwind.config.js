@@ -26,6 +26,7 @@ module.exports = {
           gridTemplateColumns: {
             'auto-fill' : 'repeat(auto-fill, minmax(18em, 1fr))'
           }
+
         },
     },
     plugins: [],

@@ -1,5 +1,6 @@
 $(document).ready(()=>{
-    const key = "66d3737f6f13454880d0fe3f9948fa06";
+    const rawGKey = "66d3737f6f13454880d0fe3f9948fa06";
+    const gameSpotKey ="6493f75acb2827c70912c6f769c7649ed167342a";
 
     const inputEl = $(".game-input");
     const searchBtn = $(".search");
@@ -33,7 +34,9 @@ $(document).ready(()=>{
     let previousUrl;
     let slug;
 
-    
+    function displayVideo(data){
+        // const video = data
+    }
     
     function displayScreenshots(data){
         const images = data.results.map(result => result.image);
@@ -45,7 +48,7 @@ $(document).ready(()=>{
             next = index + 1;
             prev = prev < 0 ? images.length - 1 : prev;
             next = next === images.length ? 0 : next;
-            console.log(`prev is ${prev} and next is ${next}`);
+            // console.log(`prev is ${prev} and next is ${next}`);
             carouselEl.append(`
                 <div id="slide${index}" class="carousel-item relative w-full">
                     <img src="${image}" class="w-full"/>
@@ -61,9 +64,13 @@ $(document).ready(()=>{
 
         
     }
+    function fetchTheGameVideo(slug){
+        const requestUrl = `http://www.gamespot.com/api/videos/?api_key=${gameSpotKey}&filter=title:${slug}`;
+        fetchData(requestUrl, "video");
+    }
 
     function fetchScreenshotsOfTheGame(slug){
-        const requestUrl = `https://rawg.io/api/games/${slug}/screenshots?key=${key}`;
+        const requestUrl = `https://rawg.io/api/games/${slug}/screenshots?key=${rawGKey}`;
         fetchData(requestUrl, "screenshots");
     }
 
@@ -116,6 +123,7 @@ $(document).ready(()=>{
         
         slug = data.slug;
         fetchScreenshotsOfTheGame(slug);
+        fetchTheGameVideo(slug);
     
     }
     function showPagination(data){
@@ -168,8 +176,8 @@ $(document).ready(()=>{
         // result.platforms[0].platform.name
         for(result of data.results){
             const platforms =result.platforms.map(platform => platform.platform.name);
-            console.log("platforms are ");
-            console.log(platforms);
+            // console.log("platforms are ");
+            // console.log(platforms);
             gamesContainer.append(`
                 <div class="card card-compact bg-base-100 shadow-xl  hover:opacity-90">
                     <figure><img src="${result.background_image}" alt="${result.name}"  data-id="${result.background_image}" ></figure>
@@ -206,11 +214,14 @@ $(document).ready(()=>{
                 showOrHidePage("index-games", false);
                 showOrHidePage("detail-page");
                 displayTheGameDetails(data);
-                
-            }else{
+            }else if(dataOf === "screenshots"){
                 console.log("-----------------fetching the game screenshots");
                 console.log(data);
                 displayScreenshots(data);
+            }else{
+                console.log("-----------------fetching the game video");
+                console.log(data);
+                displayVideo(data);
             }
            
         })
@@ -223,10 +234,10 @@ $(document).ready(()=>{
         const url = "https://api.rawg.io/api/games?";
         
         // console.log(gameQueryString);
-        const requestUrl = `${url}key=${key}&search="${gameQueryString}"&page_size=6&search_precise=true`;
+        const requestUrl = `${url}key=${rawGKey}&search="${gameQueryString}"&page_size=6&search_precise=true`;
         fetchData(requestUrl);
         // searchMsgEl.removeClass("hidden");
-        searchMsgEl.html(`Showing results for: <span class="data">${gameQueryString}</span>`);
+        searchMsgEl.html(`Showing results for: <span class="data-caption">${gameQueryString}</span>`);
 
     }
 
@@ -237,7 +248,7 @@ $(document).ready(()=>{
         recentSearchEl.html("");
         if(recentSearches.length > 0){
             recentSearches.forEach(search=>{
-                recentSearchEl.append(`<li>${i}.${search}</li>`)
+                recentSearchEl.append(`<li class ="hover:text-amber-100 hover:cursor-pointer hover:text-lg ">${i}.${search}</li>`)
                 // console.log("during creating list");
                 i++;
             });
@@ -289,6 +300,18 @@ $(document).ready(()=>{
            return false;
         }
     }
+    //when search history link is pressed
+    recentSearchEl.on("click", "li", (e)=>{
+        // console.log($(e.target).text());
+        const searchQuery = $(e.target).text();
+        const searchQueryArr= Array.from(searchQuery).filter((char, i)=>{
+            return i > 1;
+        });
+        // console.log(searchQueryArr);
+        // console.log(searchQueryArr.join(""));
+        
+        fetchGames(searchQueryArr.join(""));
+    });
     //when search button is pressed
     searchBtn.on("click", ()=>{
         // console.log("button clicked");
@@ -352,7 +375,7 @@ $(document).ready(()=>{
     gamesContainer.on("click","img", e=>{
         const id = $(e.target).data("id");
         modalEl.html("");
-        modalEl.append(`<img src="${id}" alt="">
+        modalEl.append(`<img src="${id}" alt="" class="full">
             <div class="modal-action">
             <form method="dialog">
                 <!-- if there is a button in form, it will close the modal -->
@@ -366,7 +389,7 @@ $(document).ready(()=>{
         const id = $(e.target).data("id");
         // console.log("id" + id);
         const url = "https://api.rawg.io/api/games/";
-        const requestUrl = `${url}${id}?key=${key}`;
+        const requestUrl = `${url}${id}?key=${rawGKey}`;
         // const requestUrl = `${url}key=${key}&id=${id}`;
         fetchData(requestUrl, "gameDetail");
         
