@@ -1,4 +1,4 @@
-![HTML](https://img.shields.io/badge/HTML-5-green) ![CSS](https://img.shields.io/badge/CSS-5-green) ![JavasScript](https://img.shields.io/badge/Javascript-green) ![Jquery](https://img.shields.io/badge/Jquery-green) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-green) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-green) ![Youtube APIs](https://img.shields.io/badge/Youtube-APIs-green) ![Marvel APIs](https://img.shields.io/badge/Marvel-APIs-green) 
+![HTML](https://img.shields.io/badge/HTML-5-green) ![CSS](https://img.shields.io/badge/CSS-5-green) ![JavaScript](https://img.shields.io/badge/Javascript-green) ![Jquery](https://img.shields.io/badge/Jquery-green) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-green) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-green) ![Youtube APIs](https://img.shields.io/badge/Youtube-APIs-green) ![Marvel APIs](https://img.shields.io/badge/Marvel-APIs-green) 
 
 # The University of Gaming
 
@@ -9,7 +9,7 @@ Imagine browsing a massive game library: searching for your next adventure with 
 
 - [User Story](#user-story)
 - [Objectives](#objectives)
-- [Team Members](#team-members)
+- [Team Members and Roles](#team-members-and-roles)
 - [Built in](#built-in)
 - [APIs Used](#apis-used)
 - [Screenshot](#screenshot)
