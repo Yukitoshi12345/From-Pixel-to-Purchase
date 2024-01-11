@@ -1,4 +1,4 @@
-# From Pixel to Purchase
+# The University of Gaming
 Imagine browsing a massive game library: searching for your next adventure with intuitive suggestions, diving into detailed profiles brimming with information, and effortlessly purchasing your chosen game through a trusted provider. Sounds seamless, right? These scenarios explore just that, outlining a user-friendly journey from discovery to purchase.
 
 ## Table of Contents
@@ -15,7 +15,7 @@ Imagine browsing a massive game library: searching for your next adventure with 
 - [License](#license)
 
 
-## Team Members
+## Team Members And Roles
 1. [Darren Doan](https://github.com/darrendoan) (Full-Stack Development)
 2. [Muhamad Sahid](https://github.com/BrxwnSugxr) (Full-Stack Development)
 3. [Suyash Maharjan](https://github.com/SimpleSuyash) (Full-Stack Development)
@@ -65,11 +65,7 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 
 ## Output
 
-## Roles
-Darren Doan: Full-Stack Development 
-Muhamad Sahid: Full-Stack Development 
-Suyash Maharjan: Full-Stack Development 
-Yukitoshi Imaizumi-Zhou: Project Manager, Full-Stack Development
+
 
 
 
