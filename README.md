@@ -16,11 +16,13 @@ Imagine browsing a massive game library: searching for your next adventure with 
 
 
 ## Team Members And Roles
-1. [Darren Doan](https://github.com/darrendoan) (Full-Stack Development)
-2. [Muhamad Sahid](https://github.com/BrxwnSugxr) (Full-Stack Development)
-3. [Suyash Maharjan](https://github.com/SimpleSuyash) (Full-Stack Development)
-4. [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345) (Project Manager, Full-Stack Development)
 
+| Team Members         | Roles                                                                |
+| -------------------- | ------------------------------------------------------------------------ |
+| [Darren Doan](https://github.com/darrendoan)     | (Full-Stack Development)                                  |
+| [Muhamad Sahid](https://github.com/BrxwnSugxr)    | (Full-Stack Development) |
+| [Suyash Maharjan](https://github.com/SimpleSuyash) | (Full-Stack Development)                                                          |
+| [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345)  | (Project Manager, Full-Stack Development)                                                          |
 
 
 ## User Story
