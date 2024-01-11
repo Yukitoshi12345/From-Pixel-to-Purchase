@@ -61,7 +61,7 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 
 ## APIs Used
 - [RAWG game database API](https://rawg.io/apidocs)
-- Marvel API(https://developer.marvel.com/)
+- [Marvel API](https://developer.marvel.com/)
 - Youtube API
 
   
