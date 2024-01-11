@@ -1,6 +1,26 @@
-$(document).ready(() => {
-  const key = '66d3737f6f13454880d0fe3f9948fa06';
-  const ytKey = `AIzaSyBoHe8CqIx0Alv1Jrh2Fzbi0DMiZ9xCmXc`;
+$(document).ready(()=>{
+    const key = "66d3737f6f13454880d0fe3f9948fa06";
+
+    const inputEl = $(".game-input");
+    const searchBtn = $(".search");
+    const recentSearchEl = $(".recent-search");
+    const searchMsgEl = $(".games-page p");
+    const indexPageContainer = $(".index-page");
+    const gamesPageContainer = $(".games-page");
+    const gamesContainer = $(".games");
+    const returnBtn = $(".return");
+    // const nextBtn = $(".next");
+    // const previousBtn =$(".previous");
+
+    const modalBoxEl = $(".modal-box");
+    const dialogBoxEl = $(".modal");
+
+    // const modalBoxEl = $(".modal-box");
+    // const dialogBoxEl = $("#my_modal_5");
+
+    const pageNavEl = $(".page-nav");
+    const errMsg = $(".error-text");
+
 
   const inputEl = $('.game-input');
   const searchBtn = $('.search');
@@ -180,16 +200,18 @@ $(document).ready(() => {
     getAllGamePlatforms();
   }
 
-  function displayGames(data) {
-    gamesContainer.html('');
-    let id = null;
-    for (result of data.results) {
-      id = result?.id;
-      gamesContainer.append(`
-                <div   class="min-h-[100px] card card-compact bg-base-100 shadow-xl md:col-span-1">
-                        <figure><img src="${result.background_image}" alt="${
-        result.name
-      }" /></figure>
+    function displayGames(data){
+        gamesContainer.html("");
+        for(result of data.results){
+            gamesContainer.append(`
+
+                <div class="card card-compact bg-base-100 shadow-xl md:col-span-1 hover:opacity-50">
+                        <figure><img src="${result.background_image}" alt="${result.name}" ></figure>
+
+                <div class="card card-compact bg-base-100 shadow-xl md:col-span-1">
+                        <figure><img src="${result.background_image}" alt="${result.name}" /></figure>
+
+
                         <div class="card-body">
                         <h2 class="card-title">${result.name}</h2>
                         <ul >
@@ -350,24 +372,24 @@ $(document).ready(() => {
     if (storedSearches) {
       recentSearches = storedSearches;
     }
-  }
-  function saveTheSearchToLS(queryString) {
-    let searches;
-    // console.log("from save function " + queryString);
-    //  console.log(queryString.trim().length);
-    if (queryString.trim().length !== 0) {
-      // console.log("length is not 0");
-      if (recentSearches.length === 0) {
-        //  console.log("!recentSearches");
-        recentSearches.push(queryString);
-      } else {
-        // console.log("recentSearches");
-        searches = recentSearches.filter((search) => {
-          return search != queryString;
-        });
-        recentSearches = searches;
-        if (recentSearches.length > 13) {
-          recentSearches.pop();
+
+    function validateGameNameInput(){
+        const input = inputEl.val().trim();
+        if(input.length >=1){
+            return true;
+        }else{
+           inputEl.val("");
+           inputEl.focus();
+           console.log("after validation false");
+
+    function validateGameNameInput(input){
+        if(input.trim().length >=1){
+            return true;
+        }else{
+           inputEl.setCustomValidity(false);
+
+           return false;
+
         }
         recentSearches.reverse();
         recentSearches.push(queryString);
@@ -386,14 +408,26 @@ $(document).ready(() => {
     }
   }
 
-  //when search button is pressed
-  searchBtn.on('click', () => {
-    console.log('button clicked');
-    const searchQuery = inputEl.val();
-    console.log('search query ' + searchQuery);
-    if (validateGameNameInput(searchQuery)) {
-      saveTheSearchToLS(searchQuery);
-      displayRecentSearches();
+    //when search button is pressed
+    searchBtn.on("click", ()=>{
+
+        // console.log("button clicked");
+        const searchQuery = inputEl.val();
+        // console.log("search query " + searchQuery);
+        // console.log(validateGameNameInput());
+        if(validateGameNameInput()){
+
+        console.log("button clicked");
+        const searchQuery = inputEl.val();
+        console.log("search query " + searchQuery);
+        if(validateGameNameInput(searchQuery)){
+
+            saveTheSearchToLS(searchQuery);
+            displayRecentSearches();
+            fetchGames(searchQuery);
+            inputEl.val("");
+        }
+
 
       fetchGames(searchQuery);
       inputEl.val('');
@@ -427,35 +461,31 @@ $(document).ready(() => {
     const searchQueryArr = Array.from(searchQuery).filter((char, i) => {
       return i > 1;
     });
-    // console.log(searchQueryArr);
-    // console.log(searchQueryArr.join(""));
 
-    fetchGames(searchQueryArr.join(''));
-  });
+    // gamesContainer.on("click","img", e=>{
+    //     const src= e.target.src;
+    //     console.log("source" + src);
+    //     const img = `<img src="${src}" alt="">`;
+    //     modalBoxEl.prepend(img);
+    //     dialogBoxEl.showModal();
+    // });
 
-  pageNavEl.on('click', 'button', (e) => {
-    // console.log($(e.target).text());
-    if ($(e.target).text() === 'Next Page') {
-      // console.log(nextUrl);
-      fetchData(nextUrl);
-    }
-    if ($(e.target).text() === 'Previous Page') {
-      // console.log(previousUrl);
-      fetchData(previousUrl);
-    }
-  });
-  // gamesContainer.on("click","img", e=>{
-  //     const src= e.target.src;
-  //     console.log("source" + src);
-  //     const img = `<img src="${src}" alt="">`;
-  //     modalBoxEl.prepend(img);
-  //     dialogBoxEl.showModal();
-  // });
-  // // gamesContainer.on("click","img", dialogBoxEl.showModal);
-  returnBtn.on('click', () => {
-    showOrHidePage('index');
-    showOrHidePage('games', false);
-  });
+    
+    // gamesContainer.on("click","img", dialogBoxEl.showModal());
 
-  displayRecentSearches();
+
+    // // gamesContainer.on("click","img", dialogBoxEl.showModal);
+
+     returnBtn.on("click", ()=>{
+       showOrHidePage("index");
+       showOrHidePage("games", false);
+     });
+
+    displayRecentSearches();
+
 });
+
+
+});
+
+
