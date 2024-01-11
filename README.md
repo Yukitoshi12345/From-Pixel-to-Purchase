@@ -5,32 +5,64 @@
 
 ## Introduction
 Imagine browsing a massive game library: searching for your next adventure with intuitive suggestions, diving into detailed profiles brimming with information, and effortlessly purchasing your chosen game through a trusted provider. Sounds seamless, right? These scenarios explore just that, outlining a user-friendly journey from discovery to purchase.
+This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `Daisy UI`, with several server-side API's namely `RAWG API` `Youtube API` and `Marvel API`.
 
-### Screenshot
+
 
 ## Table of Contents
 
-- [Concept](#Concept)
+- [Usage](#Usage)
+- [Documentation](#Documentation)
 - [Team Members](#team-members)
 - [Built in](#built-in)
-- [Installation](#installation)
 - [License](#license)
 
-## Concept
+
+## Usage
+
+| Steps                | Details                                                                  |
+| -------------------- | ------------------------------------------------------------------------ |
+| Live application |  [The University of Gaming](https://yukitoshi12345.github.io/The-University-of-Gaming/)                                                           |
+| Clone this repo      | ` git clone git@github.com:Yukitoshi12345/The-University-of-Gaming.git` |
+| run on vs | ` cd .. `                                                           |
 
 
 
-### User Story
+### Video Demo
+
+### ScreenShot
+
+## Documentation
+
+### APIs Used
+- [RAWG game database API](https://rawg.io/apidocs)
+- [Marvel API](https://developer.marvel.com/)
+- [Youtube API](https://developers.google.com/youtube/v3)
+### CSS Framework
+- 
+-
+-
+### JS Framework
+-
+-
+-
+### Fonts
+- Google Fonts
+
+
+
+
+#### User Story
 ```md
 AS A gaming fanatic with a busy schedule 
 I WANT to search/view for a game  
 SO THAT I can view the game in detail and/or purchase the game.  
 ```
 
-### Objectives
+#### Objectives
 ```md
 Scenario: Exploring Game Title
-GIVEN: I am on the homepage of (name)
+GIVEN: I am on the homepage of The University of Gaming
 	WHEN: I search for the game in the search bar
 THEN: Then the search bar should provide instant and relevant suggestions as I type, guiding me towards recognizing and selecting the desired game title. 
 
@@ -45,46 +77,26 @@ GIVEN: I am on the detailed game profile page.
 THEN: clicking on the provided link for trusted (amazon sellers?)
 ```
 
-### Team Members
-
-| Team Members         | Roles                                                                |
-| -------------------- | ------------------------------------------------------------------------ |
-| [Darren Doan](https://github.com/darrendoan)     | (Full-Stack Development)                                  |
-| [Muhamad Sahid](https://github.com/BrxwnSugxr)    | (Full-Stack Development) |
-| [Suyash Maharjan](https://github.com/SimpleSuyash) | (Full-Stack Development)                                                          |
-| [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345)  | (Project Manager, Full-Stack Development)                                                          |
 
 
 
+### Credit
 
-### APIs Used
-- [RAWG game database API](https://rawg.io/apidocs)
-- [Marvel API](https://developer.marvel.com/)
-- [Youtube API](https://developers.google.com/youtube/v3)
-
-
-  
-
-
-### Built in
-- `HTML:` The foundational canvas upon which this digital masterpiece is painted, providing structure and elegance.
-- `CSS:` An artistic touch, seamlessly intertwining with HTML to bestow a visually captivating aesthetic.
-- `Javascript:` The soul of this creation, breathing life and dynamism into every line of code.
-- `JQuery:` A refined embellishment, enhancing interactivity and user experience with finesse.
-- `Tailwind CSS:` A tailored suit for the code, meticulously designed for responsiveness and style.
-- `Server-Side APIs:` The mystical portals connecting this creation to vast realms of external data, enabling a dynamic and enriched experience.
+| Contributors                                                  | Roles                                     | Task
+| --------------------                                          | --------------------------------          |---------------------------------------------  |
+| [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345)  | Project Manager, Full-Stack Development   | API, Rendering, Design |
+| [Darren Doan](https://github.com/darrendoan)                  | Full-Stack Development                    | API, Rendering, Design |
+| [Muhamad Sahid](https://github.com/BrxwnSugxr)                | Full-Stack Development                    | API, Rendering, Design, Local Storage  |
+| [Suyash Maharjan](https://github.com/SimpleSuyash)            | Full-Stack Development                    | API, Rendering, Design, Local Storage |
 
 
-
-### Installation
-
-| Steps                | Details                                                                  |
-| -------------------- | ------------------------------------------------------------------------ |
-| Clone this repo      | ` git clone git@github.com:Yukitoshi12345/The-University-of-Gaming.git` |
-| run on vs | ` cd .. `                                                           |
-| Project Uploaded |  [https://github.com/yukitoshi12345/The-University-of-Gaming/](https://github.com/yukitoshi12345/The-University-of-Gaming)                                                           |
-| Live application |  [https://yukitoshi12345.github.io/The-University-of-Gaming/](https://yukitoshi12345.github.io/The-University-of-Gaming/)                                                           |
-
+-  API Guides
+-  [Working in Branches](https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/)
+	- [Tutorial RAWG API](https://api.rawg.io/docs/#tag/platforms)
+ 	- [Tutorial YT API](https://developers.google.com/youtube/v3)
+  	- [Tutorial marvel API](https://developer.marvel.com/)
+   	- [Tutorial Tailwind css](https://daisyui.com/components/) 
+ 	 	
 
 
 
