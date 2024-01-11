@@ -1,19 +1,20 @@
 ![HTML](https://img.shields.io/badge/HTML-5-green) ![CSS](https://img.shields.io/badge/CSS-5-green) ![JavaScript](https://img.shields.io/badge/Javascript-green) ![Jquery](https://img.shields.io/badge/Jquery-green) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-green) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-green) ![Youtube APIs](https://img.shields.io/badge/Youtube-APIs-green) ![Marvel APIs](https://img.shields.io/badge/Marvel-APIs-green) 
 
+
 # The University of Gaming
 
 ## Introduction
 Imagine browsing a massive game library: searching for your next adventure with intuitive suggestions, diving into detailed profiles brimming with information, and effortlessly purchasing your chosen game through a trusted provider. Sounds seamless, right? These scenarios explore just that, outlining a user-friendly journey from discovery to purchase.
 
+## Screenshot
+
 ## Table of Contents
 
 - [User Story](#user-story)
 - [Objectives](#objectives)
-- [Team Members and Roles](#team-members-and-roles)
+- [Team Members](#team-members)
 - [Built in](#built-in)
 - [APIs Used](#apis-used)
-- [Screenshot](#screenshot)
-- [Output](#output)
 - [Installation](#installation)
 - [License](#license)
 
@@ -46,7 +47,7 @@ GIVEN: I am on the detailed game profile page.
 THEN: clicking on the provided link for trusted (amazon sellers?)
 ```
 
-## Team Members And Roles
+## Team Members
 
 | Team Members         | Roles                                                                |
 | -------------------- | ------------------------------------------------------------------------ |
@@ -55,6 +56,15 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 | [Suyash Maharjan](https://github.com/SimpleSuyash) | (Full-Stack Development)                                                          |
 | [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345)  | (Project Manager, Full-Stack Development)                                                          |
 
+
+
+
+## APIs Used
+- [RAWG game database API](https://rawg.io/apidocs)
+- Marvel API(https://developer.marvel.com/)
+- Youtube API
+
+  
 
 
 ## Built in
@@ -66,19 +76,6 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 - `Server-Side APIs:` The mystical portals connecting this creation to vast realms of external data, enabling a dynamic and enriched experience.
 
 
-## APIs Used
-- [RAWG game database API](https://rawg.io/apidocs)
-- GameSpot API
-- Youtube API
-
-## Screenshot
-
-## Output
-
-
-
-
-
 
 ## Installation
 
@@ -86,8 +83,8 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 | -------------------- | ------------------------------------------------------------------------ |
 | Clone this repo      | ` git clone git@github.com:Yukitoshi12345/The-University-of-Gaming.git` |
 | run on vs | ` cd .. `                                                           |
-| project uploaded | [GitHub](https://github.com/) at the following repository: [https://github.com/yukitoshi12345/The-University-of-Gaming/](https://github.com/yukitoshi12345/The-University-of-Gaming)                                                           |
-| access the deployed application |  [https://yukitoshi12345.github.io/The-University-of-Gaming/](https://yukitoshi12345.github.io/The-University-of-Gaming/)                                                           |
+| Project Uploaded |  [https://github.com/yukitoshi12345/The-University-of-Gaming/](https://github.com/yukitoshi12345/The-University-of-Gaming)                                                           |
+| Live application |  [https://yukitoshi12345.github.io/The-University-of-Gaming/](https://yukitoshi12345.github.io/The-University-of-Gaming/)                                                           |
 
 
 
