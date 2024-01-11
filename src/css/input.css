@@ -16,3 +16,9 @@
 .data{
     @apply text-amber-400  italic;
 }
+.modal-box{
+    @apply min-h-dvh min-w-full ;
+}
+.full{
+    @apply block w-full h-dvh object-contain;
+}
