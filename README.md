@@ -1,4 +1,4 @@
-![HTML](https://img.shields.io/badge/HTML-green) ![CSS](https://img.shields.io/badge/CSS-green) ![JavasScript](https://img.shields.io/badge/Javascript-green) ![Jquery](https://img.shields.io/badge/Jquery-green) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![HTML](https://img.shields.io/badge/HTML-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-green) 
+![HTML](https://img.shields.io/badge/HTML-5-green) ![CSS](https://img.shields.io/badge/CSS-5-green) ![JavasScript](https://img.shields.io/badge/Javascript-green) ![Jquery](https://img.shields.io/badge/Jquery-green) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-green) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-green) ![Youtube APIs](https://img.shields.io/badge/Youtube-APIs-green) ![Marvel APIs](https://img.shields.io/badge/Marvel-APIs-green) 
 
 # The University of Gaming
 
@@ -58,12 +58,13 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 
 
 ## Built in
-`HTML:` The foundational canvas upon which this digital masterpiece is painted, providing structure and elegance.
-`CSS:` An artistic touch, seamlessly intertwining with HTML to bestow a visually captivating aesthetic.
-`Javascript:` The soul of this creation, breathing life and dynamism into every line of code.
-`JQuery:` A refined embellishment, enhancing interactivity and user experience with finesse.
-`Tailwind CSS:` A tailored suit for the code, meticulously designed for responsiveness and style.
-`Server-Side APIs:` The mystical portals connecting this creation to vast realms of external data, enabling a dynamic and enriched experience.
+- `HTML:` The foundational canvas upon which this digital masterpiece is painted, providing structure and elegance.
+- `CSS:` An artistic touch, seamlessly intertwining with HTML to bestow a visually captivating aesthetic.
+- `Javascript:` The soul of this creation, breathing life and dynamism into every line of code.
+- `JQuery:` A refined embellishment, enhancing interactivity and user experience with finesse.
+- `Tailwind CSS:` A tailored suit for the code, meticulously designed for responsiveness and style.
+- `Server-Side APIs:` The mystical portals connecting this creation to vast realms of external data, enabling a dynamic and enriched experience.
+
 
 ## APIs Used
 - [RAWG game database API](https://rawg.io/apidocs)
@@ -85,8 +86,8 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 | -------------------- | ------------------------------------------------------------------------ |
 | Clone this repo      | ` git clone git@github.com:Yukitoshi12345/The-University-of-Gaming.git` |
 | run on vs | ` cd .. `                                                           |
-| project uploaded | ` [GitHub](https://github.com/) at the following repository: [https://github.com/yukitoshi12345/The-University-of-Gaming/](https://github.com/yukitoshi12345/The-University-of-Gaming)`                                                           |
-| access the deployed application | ` [https://yukitoshi12345.github.io/The-University-of-Gaming/](https://yukitoshi12345.github.io/The-University-of-Gaming/) `                                                           |
+| project uploaded | [GitHub](https://github.com/) at the following repository: [https://github.com/yukitoshi12345/The-University-of-Gaming/](https://github.com/yukitoshi12345/The-University-of-Gaming)                                                           |
+| access the deployed application |  [https://yukitoshi12345.github.io/The-University-of-Gaming/](https://yukitoshi12345.github.io/The-University-of-Gaming/)                                                           |
 
 
 
