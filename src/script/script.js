@@ -1,4 +1,4 @@
-ca$(document).ready(()=>{
+$(document).ready(()=>{
     const rawGKey = "66d3737f6f13454880d0fe3f9948fa06";
     const gamespotKey ="6493f75acb2827c70912c6f769c7649ed167342a";
     const giantBombKey ="44f9c228b9f178613033839ebfd62f00e49ff1f6";
@@ -39,6 +39,7 @@ ca$(document).ready(()=>{
     let previousUrl;
     let slug;
 
+    //displays the recent arcticles in the collapse component
     function displayArticles(response){
         let title, url;
         response.results.forEach((result, index)=>{
@@ -47,10 +48,10 @@ ca$(document).ready(()=>{
             url= result.site_detail_url;
             console.log(`title: ${title}`);
             console.log(`url: ${url}`);
-            recentArticlesEl.append(`<li class ="hover:text-amber-100 hover:cursor-pointer hover:text-lg border-b-2 border-amber-50 ">${index}.<a href="${url}">${title}</href></li>`)
+            recentArticlesEl.append(`<li class ="hover:text-amber-100 hover:cursor-pointer hover:text-lg border-b-2 border-amber-50" data-url="${url}">${index}.${title}</li>`)
         });
     }
-
+    //displays the video of the game on the detail page
     function displayVideo(response){
         let results = response.results;
         //default link
@@ -73,16 +74,16 @@ ca$(document).ready(()=>{
                 }
             });
         }
-     
         console.log("src");
         console.log(src);
         videoEl.attr("src", src );
     }
     
+
+    //shows the screenshot images of the game in carousel component
     function displayScreenshots(data){
         const images = data.results.map(result => result.image);
         carouselEl.html("");
-        // console.log(screenshots + "screenshots");
         images.forEach((image, index) =>{
             let prev, next;
             prev = index - 1;
@@ -90,6 +91,7 @@ ca$(document).ready(()=>{
             prev = prev < 0 ? images.length - 1 : prev;
             next = next === images.length ? 0 : next;
             // console.log(`prev is ${prev} and next is ${next}`);
+            //putting images in the carousel component
             carouselEl.append(`
                 <div id="slide${index}" class="carousel-item relative w-full">
                     <img src="${image}" class="w-full"/>
@@ -102,7 +104,7 @@ ca$(document).ready(()=>{
             `);
         });
     }
-
+    //fetches the game video data
     function fetchGamespotData(requestUrl, content="video"){
         // AJAX call requires a third party library, jQuery
         $.ajax({
@@ -116,25 +118,28 @@ ca$(document).ready(()=>{
             }else{
                 displayArticles(response);
             }
-            
         });
     }
-
+    //fetches the game video data when game slug is passed in
     function fetchTheGameVideo(slug){
         console.log(slug);
+        //rawg has titles delimited by - like: the-god-of-war-4
+        //gamespot has titles delimited by %20 like: the%20god%20of%20war%204
+        //so replacing the rawg delimiter with gamespot delimiter
         const gamespotSlug = slug.replaceAll("-","%20");
         console.log(gamespotSlug);
-        // gameNameEl = 
         const requestUrl = `http://www.gamespot.com/api/videos/?api_key=${gamespotKey}&format=json&limit=10&filter=title:${gamespotSlug}&categories:[{Trailer},{Games}]`;
         fetchGamespotData(requestUrl);
-
     }
 
+    //fetches the screenshots of the game given the slug
     function fetchScreenshotsOfTheGame(slug){
         const requestUrl = `https://rawg.io/api/games/${slug}/screenshots?key=${rawGKey}`;
         fetchData(requestUrl, "screenshots");
     }
 
+    //displays the game details 
+    //attribute/data are like name, description, released date etc
    function displayTheGameDetails(data){
         const name = data.name;
         gameNameEl.append(name);
@@ -160,6 +165,7 @@ ca$(document).ready(()=>{
         });
         const rating = data.rating;
         ratingEl.append(rating);
+        //not showing following attributes
         // const ratings = data.ratings.map(rating=>{rating.title, rating.percent});
         //  const esbrRating = data.esbr_rating.map(rating => rating.name);
         // const metacritic = data.metacritic;
@@ -187,6 +193,8 @@ ca$(document).ready(()=>{
         fetchTheGameVideo(slug);
     
     }
+
+    //shows next/previous button for page navigation
     function showPagination(data){
         pageNavEl.html("");
         if(data.previous){
@@ -199,52 +207,42 @@ ca$(document).ready(()=>{
         }
     }
 
+    //page switch
+    //hides and shows the html elements
+    //so an user can go from index to games to details pages
+    // and back and forth an in between
     function showOrHidePage(page, toShow = true){
         if(toShow){//showing the page
             if(page === "index"){
                 indexPageContainer.removeClass("hidden");
                 
-                // alert("1");
             }else if (page === "games"){
                 gamesPageContainer.removeClass("hidden");
-                // gamesPageContainer.removeClass("positioned");
-                // alert("2");
             }else if(page === "detail-page"){
-                // detailPageContainer.removeClass("positioned");
                 detailPageContainer.removeClass("hidden");
-                // alert("3");
             }else{
-                // indexGamePageContainer.removeClass("positioned");
                 indexGamePageContainer.removeClass("hidden");
-                // alert("4");
             }
         }else{//hiding the page
             if(page === "index"){
                 indexPageContainer.addClass("hidden");
-                // alert("5");
             }else if (page === "games"){
                 gamesPageContainer.addClass("hidden");
-                // gamesPageContainer.addClass("positioned");
-                // alert("6");
             }else if(page === "detail-page"){
-                // detailPageContainer.addClass("positioned");
                 detailPageContainer.addClass("hidden");
-                // alert("7");
             }else{
-                // indexGamePageContainer.addClass("positioned");
                 indexGamePageContainer.addClass("hidden");
-                // alert("8");
             }
         }
     }
-
+    //displays the results from the game search
     function displayGames(data){
-        
         gamesPageContainer.removeClass("hidden");
-        
+        //if no games were found as a search result
         if(data.results.length===0){
             result404.removeClass("hidden");
             gamesContentEl.addClass("hidden");
+        //when games are found as a search result
         }else{
             saveTheSearchToLS(inputEl.val());
             displayRecentSearches();
@@ -273,15 +271,15 @@ ca$(document).ready(()=>{
             }
             inputEl.val("");
         }
-
     }
+
+    //fetches search result games data
     function fetchData(requestUrl,  dataOf ="games"){
         fetch(requestUrl)
         .then(function (response) {
             return response.json();
         })
         .then(function (data) {
-            
             if(dataOf === "games"){
                 console.log("-----------------fetching games data");
                 console.log(data);
@@ -305,107 +303,116 @@ ca$(document).ready(()=>{
                 console.log(data);
                 displayVideo(data);
             }
-           
         })
         .catch(function (err) {
             console.log("Something went wrong!", err);
         });
     }
-
+    //fetches the game search given the search word
     function fetchGames(gameQueryString){
         const url = "https://api.rawg.io/api/games?";
-        
-        // console.log(gameQueryString);
         const requestUrl = `${url}key=${rawGKey}&search="${gameQueryString}"&page_size=6&search_precise=true`;
         fetchData(requestUrl);
-        // searchMsgEl.removeClass("hidden");
         searchMsgEl.html(`Showing results for: <span class="data-caption">${gameQueryString}</span>`);
-
     }
 
+    //shows the recently searched game list
     function displayRecentSearches(){
         let i= 1;
         readTheSearchesFromLS();
-        // console.log("before creating list");
         recentSearchEl.html("");
         if(recentSearches.length > 0){
             recentSearches.forEach(search=>{
                 recentSearchEl.append(`<li class ="hover:text-amber-100 hover:cursor-pointer hover:text-lg border-b-2 border-amber-50 ">${i}.${search}</li>`);
-                // console.log("during creating list");
                 i++;
             });
         }
-   
-        // console.log("after creating list");
     }
+
+    //reads the search list from the local storage
     function readTheSearchesFromLS(){
         const storedSearches = JSON.parse(localStorage.getItem("Search Queries"));
         if(storedSearches){
             recentSearches = storedSearches;
         }
     }
+
+    //saves the recent search list to the local storage
     function saveTheSearchToLS(queryString){
         let searches;
-        // console.log("from save function " + queryString);
-        //  console.log(queryString.trim().length);
+        //when user didn't type empty string
         if(queryString.trim().length !== 0){
-            // console.log("length is not 0");
+            //if the list is empty, add the searched game to the list
             if(recentSearches.length === 0){
-                //  console.log("!recentSearches");
                 recentSearches.push(queryString)
-            }else{
-                // console.log("recentSearches");
+            //if the list is not empty,
+            //create another list without the game being searched
+            // add the the game to the list
+            //so most recent search will be on the top of the list
+            }else{ 
                 searches = recentSearches.filter(search=>{
                     return search != queryString;
                 });
                 recentSearches=searches;
+                //the search list is limited to 13 items
+                //stops from perpetually growing
+                //the array has most recent searched item as first element
+                //and the oldest search as the list element
+                //delete the one on the last of the list
+                //as it is the oldest search
                 if(recentSearches.length>13){
                     recentSearches.pop();
                 }
+                //reversing the order of the items to match the search order
+                //because we will reverse the list again
+                //unshift will not work here
                 recentSearches.reverse();
                 recentSearches.push(queryString);
             }
+            //reversing the order of the list
+            //so that when appending the list items,
+            //the most recent search is appended first/is on top of the list
             recentSearches.reverse();
-            // console.log("length " + recentSearches.length);
             localStorage.setItem("Search Queries", JSON.stringify(recentSearches));
         }
-
     }
+
+    //checks if the user input for the game name is empty
     function validateGameNameInput(){
         const input = inputEl.val().trim();
         if(input.length >=1){
             return true;
+        //if it is empty, remove the empty string
+        //put the focus back to the input element
         }else{
            inputEl.val("");
            inputEl.focus();
-           console.log("after validation false");
            return false;
         }
     }
+
     //when search history link is pressed
     recentSearchEl.on("click", "li", (e)=>{
-        // console.log($(e.target).text());
         const searchQuery = $(e.target).text();
         const searchQueryArr= Array.from(searchQuery).filter((char, i)=>{
             return i > 1;
         });
-        // console.log(searchQueryArr);
-        // console.log(searchQueryArr.join(""));
-        
         fetchGames(searchQueryArr.join(""));
     });
+
+    //when recent game articles link is pressed
+    recentArticlesEl.on("click", "li", (e)=>{
+        const articleUrl = $(e.target).data("url");
+        console.log("article url: ");
+        console.log(articleUrl);
+        window.open(articleUrl);
+    });
+
     //when search button is pressed
     searchBtn.on("click", ()=>{
-        // console.log("button clicked");
         const searchQuery = inputEl.val();
-        // console.log("search query " + searchQuery);
-        // console.log(validateGameNameInput());
         if(validateGameNameInput()){
-            // saveTheSearchToLS(searchQuery);
-            // displayRecentSearches();
              fetchGames(searchQuery);
-            // showGames(searchQuery);
-            //inputEl.val("");
         }
     });
 
@@ -420,10 +427,8 @@ ca$(document).ready(()=>{
     inputEl.on("keyup", e =>{
         console.log("key " + e.key);
         if(e.key === "Enter"){
-            // e.stopImmediatePropagation();
             e.preventDefault();
             const searchQuery = inputEl.val();
-            // console.log(searchQuery);
             if(searchQuery.trim().length!==0){
                 saveTheSearchToLS(searchQuery);
                 displayRecentSearches();
@@ -435,13 +440,10 @@ ca$(document).ready(()=>{
 
     //when next and previous navigation buttons are pressed
     pageNavEl.on("click", "button", e =>{
-        // console.log($(e.target).text());
         if($(e.target).text()==="Next Page❯❯"){
-            // console.log(nextUrl);
             fetchData(nextUrl);
         }
         if($(e.target).text()==="❮❮Previous Page"){
-            // console.log(previousUrl);
             fetchData(previousUrl);
         }
     });
@@ -456,7 +458,6 @@ ca$(document).ready(()=>{
     //when the image on the game card is pressed 
     gameCardsContainer.on("click","img", e=>{
         const id = $(e.target).data("id");
-        // const w =  $(document).dccumen
         modalEl.html("");
         modalEl.append(`<img src="${id}" alt="" class="full">
             <div class="modal-action">
@@ -467,27 +468,23 @@ ca$(document).ready(()=>{
             </div>`);
         my_modal_5.showModal();
     });
+
     //when the find out more button is pressed
     gameCardsContainer.on("click","button", e=>{
         const id = $(e.target).data("id");
-        // console.log("id" + id);
         const url = "https://api.rawg.io/api/games/";
         const requestUrl = `${url}${id}?key=${rawGKey}`;
-        // const requestUrl = `${url}key=${key}&id=${id}`;
         fetchData(requestUrl, "gameDetail");
-        
-
     });
 
     //user presses return to index page while in detail page
     returnIndexBtn.on("click", ()=>{
-        
         showOrHidePage("index-games");
         showOrHidePage("index");
         inputEl.focus();
         showOrHidePage("detail-page", false);
-        // showOrHidePage("games", false);
      });
+
      //user presses return back while in detail page
      returnBackBtn.on("click", ()=>{
         showOrHidePage("detail-page", false);
@@ -495,31 +492,15 @@ ca$(document).ready(()=>{
         showOrHidePage("games");
      });
 
-
+     //display
      function displayTop10RecentArticles(){
         const today = new Date();
         const url=`http://www.gamespot.com/api/articles/?api_key=${gamespotKey}&format=json&sort=publish_date:desc&limit=10`;
         fetchGamespotData(url, "articles");
-
      }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+     //when the page loads, it shows 
+     //the recently searched games and
+     // the top 10 recent games articles
      displayRecentSearches();
      displayTop10RecentArticles();
 })
