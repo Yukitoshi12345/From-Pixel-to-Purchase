@@ -13,8 +13,7 @@ This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `
 
 - [Usage](#Usage)
 - [Documentation](#Documentation)
-- [Team Members](#team-members)
-- [Built in](#built-in)
+- [Credit](#Credit)
 - [License](#license)
 
 
@@ -30,14 +29,15 @@ This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `
 
 ### Video Demo
 
-### ScreenShot
+### Images
 
 ## Documentation
 
 ### APIs Used
 - [RAWG game database API](https://rawg.io/apidocs)
-- [Marvel API](https://developer.marvel.com/)
 - [Youtube API](https://developers.google.com/youtube/v3)
+- [Marvel API](https://developer.marvel.com/)
+
 ### CSS Framework
 - 
 -
