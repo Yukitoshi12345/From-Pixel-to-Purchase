@@ -11,12 +11,12 @@
     <link href="src/css/output.css" rel="stylesheet">
     <title>Group4 ProjectV2</title>
 </head>
-<body class="bg-[url('/assets/image/pasted.png')] bg-cover bg-scroll">
+<body class="bg-[url('/assets/image/pasted.png')] bg-cover">
    
      <!-- backdrop -->
-    <div class=" backdrop-blur ">
+    <div class=" backdrop-blur">
         <!-- body wrapper -->
-        <div class=" tracking-normal text-indigo-400 font-body pt-4  min-h-dvh  ">
+        <div class=" tracking-normal text-indigo-400 font-body pt-4  min-h-dvh ">
             <header class=" mx-auto shadow shadow-blue-950 text-center ">
                 <h1 class="text-4xl text-amber-400 font-bold font-heading py-4">The University
                     <span
@@ -27,33 +27,44 @@
             <!------------------------------------------------------------------------------------ index-game page  -->
             <div class="index-game-page">
                 <!--Content md: 5 column grid container-->
-                <div class="flex flex-col text-amber-400 m-3 md:grid md:grid-cols-3 md:gap-10 lg:grid-cols-5 ">
-                    <!--Search history 1 column item -->
+                <div class="flex flex-col text-amber-400 m-3 md:grid md:grid-cols-3 md:gap-10 lg:grid-cols-5">
                     <div class="md:col-span-1 lg:col-span-1">
-                        <!--collapse component-->
+                        <!--Search collapse component-->
                         <div tabindex="0"
-                            class="collapse collapse-arrow border border-base-300 bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-90 hover:shadow-md">
+                            class="collapse collapse-arrow border border-base-300 bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-90 hover:shadow-md ">
                             <div class="collapse-title text-lg font-medium data-caption bg-white drop-shadow-lg">
-                                See Recently Searched Games
+                                Click to See Recently Searched Games
                             </div>
                             <div class="collapse-content">
-                                <ul class="text-right recent-search  ">
+                                <ul class="text-right recent-search">
                                     <!--Searched Games go here-->
                                 </ul>
                             </div>
                         </div>
-                        <!--collapse component End-->
+                        <!--Search collapse component End-->
+                        <!--Article collapse component-->
+                        <div tabindex="1"
+                            class="collapse collapse-arrow border border-base-300 bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-90 hover:shadow-md ">
+                            <div class="collapse-title text-lg font-medium data-caption bg-white drop-shadow-lg">
+                                Click to See Top 10 Recent Games Articles
+                            </div>
+                            <div class="collapse-content">
+                                <ul class="text-right recent-articles">
+                                    <!--Recent articles go here-->
+                                </ul>
+                            </div>
+                        </div>
+                        <!--Article collapse component End-->
                     </div>
-                    <!--Search history End -->
-
+                    
                     <!-- md: 4 columns item -->
-                    <main class=" md:col-span-2 lg:col-span-4 min-h-full">
+                    <main class="  justify-self-end md:col-span-2 lg:col-span-4 min-h-full">
                         <!-------------------------------------------------------------- Index page -->
                         <div class="index-page">
                             <!-- md: 3 columns grid container -->
                             <div class="lg:grid lg:grid-cols-3 lg:gap-16">
                                 <!--Left Col -->
-                                <section class="lg:col-span-1">
+                                <section class="lg:col-span-1 lg:mb-36">
                                     <h1
                                         class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
                                         Click
@@ -96,14 +107,14 @@
                                 </section>
                                 <!--Left Col End-->
                                 <!--Right Col-->
-                                <div class="relative pt-20 md:pt-8 lg:col-span-2 lg:my-28  ">
-                                    <img class=" block mx-auto w-full md:w-4/5 animate-fliping-card1 transition hover:scale-125 duration-1000 ease-out hover:animate-none hover:z-50 absolute rounded-xl object-cover"
-                                        src="assets/image/peakpx.jpg" width="100%" height="100%">
-                                    <img class=" block mx-auto w-full md:w-4/5 animate-fliping-card2 transition hover:scale-125 duration-1000 ease-out  hover:animate-none hover:z-50 absolute  rounded-xl"
+                                <div class="relative pt-20 md:pt-8 lg:col-span-2 lg:my-28">
+                                    <img class="animated-pic animate-fliping-card1"
+                                        src="assets/image/peakpx.jpg">
+                                    <img class="animated-pic animate-fliping-card2"
                                         src="assets/image/god-of-war2.jpg">
-                                    <img class="  block  mx-auto w-full md:w-4/5 animate-fliping-card3 transition hover:scale-125 duration-1000 ease-out hover:animate-none hover:z-50 absolute  rounded-xl"
+                                    <img class="animated-pic animate-fliping-card3"
                                         src="assets/image/call-of-duty.jpg">
-                                    <img class="  block mx-auto w-full md:w-4/5 animate-fliping-card4 transition hover:scale-125 duration-1000 ease-out hover:animate-none hover:z-50 absolute  rounded-xl"
+                                    <img class="animated-pic animate-fliping-card4"
                                         src="assets/image/game.jpg">
                                 </div>
                                 <!--Right Col End -->
@@ -112,18 +123,26 @@
                         </div>
                         <!--Index page End-->
                         <!-------------------------------------------------------------games page / search result page -->
-                        <div class="games-page positioned">
+                        <div class="games-page hidden h-dvh w-full">
+                            <div class="result-404 page-center flex flex-col gap-10 justify-center items-center text-6xl">
+                                <div class="text-7xl">Sorry!</div>
+                                <div class="text-center">No games were found. <br>
+                                <span class=" inline-block"> Please head back to the homepage to search a game again.</span></div>
+                                <button class="btn btn-error return">Go Back</button>
+                            </div>
                             <!-- games page wrapper  -->
-                            <div class="flex flex-col justify-between mb-32">
+                            <div class="games-content flex flex-col justify-between mb-32">
                                 <div class="flex justify-end px-4">
                                     <a href="#" class="return opacity-50 hover:opacity-100"><i
                                             class="fa-solid fa-arrow-left inline-block pr-1"></i> Back to Index Page</a>
                                 </div>
-                                <div>
+                                <div class="games">
                                     <p></p>
                                     <!-- game cards go below -->
-                                    <div class="games md:grid md:grid-cols-auto-fill md: gap-4">
+                                    <div class="game-cards md:grid md:grid-cols-auto-fill md: gap-4">
                                     </div>
+                                    
+                                    
                                     <!-- game cards end -->
                                     <div class="page-nav mx-auto my-3">
                                     </div>
@@ -138,26 +157,28 @@
             </div>
             <!-- index/games page wrapper end  -->
              <!-- detail page -->
-             <div class="detail-page positioned pb-28">
+             <div class="detail-page hidden pb-28">
                 <div class="flex justify-between items-center px-4">
-                    <a href="#" class="return-index opacity-50 hover:opacity-100"><i
-                            class="fa-solid fa-arrow-right inline-block pr-1"></i> Back to Index Page</a>
                     <a href="#" class="return-games opacity-50 hover:opacity-100"><i
-                            class="fa-solid fa-arrow-left inline-block pr-1"></i> Back to Game Page</a>
+                        class="fa-solid fa-arrow-left inline-block pr-1"></i> Back to Game Page</a>
+                    <a href="#" class="return-index opacity-50 hover:opacity-100"><i
+                        class="fa-solid fa-arrow-left inline-block pr-1"></i><i
+                            class="fa-solid fa-arrow-left inline-block pr-1"></i> Back to Index Page</a>
+                    
                 </div>
                 <!-- detail page wrapper -->
                 <div class="flex flex-col items-center justify-between ">
                     <!-- <h1>{Game Name}</h1> -->
                     <!-- carousel -->
                     <div class="carousel w-3/4 my-4">
-                        <div id="slide1" class="carousel-item relative w-full">
+                        <!-- <div id="slide1" class="carousel-item relative w-full">
                             <img src="https://picsum.photos/id/20/3670/2462" class="w-full" />
                             <div
                                 class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                                 <a href="#slide4" class="btn btn-circle">❮</a>
                                 <a href="#slide2" class="btn btn-circle">❯</a>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <!-- carousel end  -->
                     <!-- game detail wrapper  -->
@@ -182,7 +203,7 @@
                                 <div class="card w-96 bg-base-100 shadow-xl">
                                     <!-- video  -->
                                     <div class="aspect-video">
-                                        <iframe class="w-full h-full" src="https://www.youtube.com/embed/FF3fuYLnApQ"
+                                        <iframe class="w-full h-full video" src=""
                                             frameborder="0"
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                             allowfullscreen>
