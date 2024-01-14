@@ -4,7 +4,7 @@
 # The University of Gaming
 
 ## Introduction
-Imagine browsing a massive game library: searching for your next adventure with intuitive suggestions, diving into detailed profiles brimming with information, and effortlessly purchasing your chosen game through a trusted provider. Sounds seamless, right? These scenarios explore just that, outlining a user-friendly journey from discovery to purchase.
+Imagine browsing a massive game library: searching for your next adventure with intuitive suggestions, diving into detailed profiles brimming with information, and effortlessly purchasing your chosen game through a trusted provider. Sounds seamless, right? These scenarios explore just that, outlining a user-friendly journey from discovery to deep dive.
 This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `Daisy UI`, with several server-side API's namely `RAWG API` `Youtube API` and `Marvel API`.
 
 
@@ -54,9 +54,12 @@ This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `
 
 #### User Story
 ```md
-AS A gaming fanatic with a busy schedule 
-I WANT to search/view for a game  
-SO THAT I can view the game in detail and/or purchase the game.  
+AS A dedicated gamer,
+My mind is constantly immersed in thoughts of video games.
+Whether pondering a new concept or exploring existing titles,
+I actively seek information to satisfy my curiosity. 
+I eagerly pursue new weekly game articles, 
+ensuring I stay informed about latest gaming news.
 ```
 
 #### Objectives
@@ -64,21 +67,23 @@ SO THAT I can view the game in detail and/or purchase the game.
 Scenario: Exploring Game Title
 GIVEN: I am on the homepage of The University of Gaming
 	WHEN: I search for the game in the search bar
-THEN: Then the search bar should provide instant and relevant suggestions as I type, guiding me towards recognizing and selecting the desired game title. 
+THEN: The search bar should provide instant and relevant suggestions as I type, guiding me through the process of recognising and selecting the game title I am looking for.
 
 Scenario: Viewing Detailed Game Profiles
-GIVEN: I’ve found a game title and clicked on it
+GIVEN: I have found a game title and clicked on it
 	WHEN: I am directed to the detailed game profile page
-THEN: The page should display comprehensive information, including release dates, user rating, scores, screenshots, and other relevant details about the selected game.  
+THEN: The page should display comprehensive information, including title, released date, platforms, developers, publishers, tags, rating, genres, images and a video of the game.  
 
-Scenario: Easy Purchases Process
-GIVEN: I am on the detailed game profile page.
-	WHEN: i decide to purchase the game
-THEN: clicking on the provided link for trusted (amazon sellers?)
+Scenario: Navigating Recently Searched Games
+GIVEN: I am on the homepage of the University of Gaming
+	WHEN: I click on a game in the recently searched games list
+THEN: The page guides me through the process of recognising and selecting the game title I am looking for.
+
+Scenario: Viewing Weekly Video Game Articles
+GIVEN: I am on the homepage of the University of Gaming
+	WHEN: I click on a list of links under the Weekly Video Game Articles
+THEN: I am presented with the news articles in a third party website.
 ```
-
-
-
 
 ### Credit
 
@@ -94,8 +99,8 @@ THEN: clicking on the provided link for trusted (amazon sellers?)
 -  [Working in Branches](https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/)
 	- [Tutorial RAWG API](https://api.rawg.io/docs/#tag/platforms)
  	- [Tutorial YT API](https://developers.google.com/youtube/v3)
-  	- [Tutorial marvel API](https://developer.marvel.com/)
-   	- [Tutorial Tailwind css](https://daisyui.com/components/) 
+  	- [Tutorial Marvel API](https://developer.marvel.com/)
+   	- [Tutorial Tailwind CSS](https://daisyui.com/components/) 
  	 	
 
 
