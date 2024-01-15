@@ -1,5 +1,4 @@
-![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript JQuerry](https://img.shields.io/badge/Javascript-JQuery-orange) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-black) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-black) ![Youtube APIs](https://img.shields.io/badge/Youtube-APIs-black) ![Marvel APIs](https://img.shields.io/badge/Marvel-APIs-black) 
-
+![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript JQuerry](https://img.shields.io/badge/Javascript-JQuery-orange) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-black) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-black) ![GameSpot APIs](https://img.shields.io/badge/GameSpot-APIs-black) 
 
 # The University of Gaming
 
@@ -39,23 +38,22 @@ This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `
 
 
 ### CSS Framework
-- 
--
--
+- Tailwind CSS
+- Daisy UI
+
 ### JS Framework
--
--
+- Search Button
+- 2 x Dropdown Button
 -
 ### Fonts
 - Google Fonts
-
-
+- Icons FontAwesome
 
 
 #### User Story
 ```md
-AS A dedicated gamer,
-My mind is constantly immersed in thoughts of video games.
+As a junior software developer I have different ideas of new games. 
+Also, as A dedicated gamer, My mind is constantly immersed in thoughts of video games.
 Whether pondering a new concept or exploring existing titles,
 I actively seek information to satisfy my curiosity. 
 I eagerly pursue new weekly game articles, 
