@@ -5,7 +5,7 @@
 
 ## Introduction
 Imagine browsing a massive game library: searching for your next adventure with intuitive suggestions, diving into detailed profiles brimming with information, and effortlessly purchasing your chosen game through a trusted provider. Sounds seamless, right? These scenarios explore just that, outlining a user-friendly journey from discovery to deep dive.
-This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `Daisy UI`, with several server-side API's namely `RAWG API` `Youtube API` and `Marvel API`.
+This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `Daisy UI`, with several server-side API's namely `RAWG API` and `Gamespot API`.
 
 
 
@@ -35,8 +35,8 @@ This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `
 
 ### APIs Used
 - [RAWG game database API](https://rawg.io/apidocs)
-- [Youtube API](https://developers.google.com/youtube/v3)
-- [Marvel API](https://developer.marvel.com/)
+- [GameSpot API](https://www.gamespot.com/api/)
+
 
 ### CSS Framework
 - 
