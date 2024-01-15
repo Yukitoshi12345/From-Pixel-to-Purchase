@@ -27,7 +27,12 @@ This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `
 
 
 ### Images
+Homepage
 ![Home](./main.png)
+Search
+![Search](./search.png)
+Details
+![Details](./details.png)
 
 
 ## Documentation
