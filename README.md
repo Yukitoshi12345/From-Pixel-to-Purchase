@@ -37,18 +37,6 @@ This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `
 - [GameSpot API](https://www.gamespot.com/api/)
 
 
-### CSS Framework
-- Tailwind CSS
-- Daisy UI
-
-### JS Framework
-- Search Button
-- 2 x Dropdown Button
--
-### Fonts
-- Google Fonts
-- Icons FontAwesome
-
 ### Chrome Extensions
 - CORS: Access-Control-Allow-Origin. This extension is needed for the weekly game articles to come up.
 
