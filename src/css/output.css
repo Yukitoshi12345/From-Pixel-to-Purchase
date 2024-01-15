@@ -960,8 +960,8 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/assets\/image\/pasted\.png\'\)\]{
-  background-image: url('/assets/image/pasted.png');
+.bg-\[url\(\'\/assets\/image\/pasted\.jpg\'\)\]{
+  background-image: url('/assets/image/pasted.jpg');
 }
 
 .bg-gradient-to-r{
@@ -1143,10 +1143,6 @@ video {
 
 .font-medium{
   font-weight: 500;
-}
-
-.lowercase{
-  text-transform: lowercase;
 }
 
 .leading-normal{
