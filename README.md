@@ -37,7 +37,7 @@ This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `
 - [GameSpot API](https://www.gamespot.com/api/)
 
 
-### Chrome Extensions
+#### Chrome Extensions
 - CORS: Access-Control-Allow-Origin. This extension is needed for the weekly game articles to come up.
 
 
