@@ -128,7 +128,7 @@ $(document).ready(()=>{
         //so replacing the rawg delimiter with gamespot delimiter
         const gamespotSlug = slug.replaceAll("-","%20");
         console.log(gamespotSlug);
-        const requestUrl = `http://www.gamespot.com/api/videos/?api_key=${gamespotKey}&format=json&limit=10&filter=title:${gamespotSlug}&categories:[{Trailer},{Games}]`;
+        const requestUrl = `https://www.gamespot.com/api/videos/?api_key=${gamespotKey}&format=json&limit=10&filter=title:${gamespotSlug}&categories:[{Trailer},{Games}]`;
         fetchGamespotData(requestUrl);
     }
 
