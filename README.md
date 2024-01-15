@@ -49,6 +49,9 @@ This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `
 - Google Fonts
 - Icons FontAwesome
 
+### Chrome Extensions
+- CORS: Access-Control-Allow-Origin. This extension is needed for the weekly game articles to come up.
+
 
 #### User Story
 ```md
