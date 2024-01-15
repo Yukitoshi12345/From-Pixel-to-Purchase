@@ -494,7 +494,6 @@ $(document).ready(()=>{
 
      //display
      function displayTop10RecentArticles(){
-        const today = new Date();
         const url=`https://www.gamespot.com/api/articles/?api_key=${gamespotKey}&format=json&sort=publish_date:desc&limit=10`;
         fetchGamespotData(url, "articles");
      }
