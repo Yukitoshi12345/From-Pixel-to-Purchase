@@ -139,8 +139,10 @@ $(document).ready(()=>{
     //displays the game details 
     //attribute/data are like name, description, released date etc
    function displayTheGameDetails(data){
-        const name = data.name;
-        gameNameEl.append(name);
+
+        gameNameEl.html("");
+        gameNameEl.append(data.name);
+
         const description = $(data.description);
         descriptionEl.html(description);
         
