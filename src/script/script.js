@@ -242,6 +242,10 @@ $(document).ready(()=>{
             gamesContentEl.addClass("hidden");
         //when games are found as a search result
         }else{
+            //only save the search if there is a matched game result
+            saveTheSearchToLS(inputEl.val().trim().toLowerCase());
+            displayRecentSearches();
+            
             result404.addClass("hidden");
             gamesContentEl.removeClass("hidden");
             gameCardsContainer.html("");
@@ -265,6 +269,7 @@ $(document).ready(()=>{
                 `);
                 showPagination(data);
             }
+            inputEl.val("");
         }
     }
 
@@ -402,24 +407,27 @@ $(document).ready(()=>{
     searchBtn.on("click", ()=>{
         //trim the whitespaces and make it all lowercase
         const searchQuery = inputEl.val().trim().toLowerCase();
-        console.log("searchquery: ");
-        console.log(searchQuery);
         //when validation is successful
         //fetch the games and displays
-        //save the searched game in the local storage
-        //and show the updated search list
         if(validateGameNameInput(searchQuery)){
             fetchGames(searchQuery);
+            /*
+            the following method saves any valid game search string,
+            any random string, for example: djkjkcjk87008s;/?
+            even if there are no games found for the search
+            //save the searched game in the local storage
+            //and show the updated search list
             saveTheSearchToLS(searchQuery);
             displayRecentSearches();
+            */
         //if validation fails
         //put the focus back to the input element
-        }else {
-            inputEl.focus();
-        }
         //remove the previously searched game user input
         //making ready for another search
-        inputEl.val("");
+        }else {
+            inputEl.focus();
+            inputEl.val("");
+        }
     });
 
     // when enter key is pressed down
@@ -431,25 +439,30 @@ $(document).ready(()=>{
 
     //after typing in user input and pressing Enter key
     inputEl.on("keyup", e =>{
-        console.log("key " + e.key);
         if(e.key === "Enter"){
             e.preventDefault();
             //removing whitespace and changing to all lowercase
             const searchQuery = inputEl.val().trim().toLowerCase();
             //when validation is successful
             //fetch the games and displays
-            //save the searched game in the local storage
-            //and show the updated search list
+            
             if(validateGameNameInput(searchQuery)){
                 fetchGames(searchQuery);
-                saveTheSearchToLS(searchQuery);
-                displayRecentSearches();
+                /*
+                    the following method saves any valid game search string,
+                    any random string, for example: djkjkcjk87008s;/?
+                    even if there are no games found for the search
+                    //save the searched game in the local storage
+                    //and show the updated search list
+                    saveTheSearchToLS(searchQuery);
+                    displayRecentSearches();
+                */
             }else {
+                //remove the previously searched game user input
+                //making ready for another search
+                inputEl.val("");
                 inputEl.focus();
             }
-            //remove the previously searched game user input
-            //making ready for another search
-            inputEl.val("");
         }
     });
 
@@ -467,6 +480,7 @@ $(document).ready(()=>{
      returnBtn.on("click", ()=>{
        showOrHidePage("index");
        inputEl.focus();
+       inputEl.val("");
        showOrHidePage("games", false);
      });
 
