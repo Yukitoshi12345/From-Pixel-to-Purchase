@@ -664,10 +664,6 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.mb-32{
-  margin-bottom: 8rem;
-}
-
 .mb-4{
   margin-bottom: 1rem;
 }
@@ -710,10 +706,6 @@ video {
 
 .h-8{
   height: 2rem;
-}
-
-.h-dvh{
-  height: 100dvh;
 }
 
 .h-full{
@@ -958,6 +950,10 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\.\/\.\.\/assets\/image\/pasted\.png\'\)\]{
+  background-image: url('../../assets/image/pasted.png');
 }
 
 .bg-\[url\(\'\/assets\/image\/pasted\.png\'\)\]{
