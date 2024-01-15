@@ -483,13 +483,16 @@ $(document).ready(()=>{
         showOrHidePage("index");
         inputEl.focus();
         showOrHidePage("detail-page", false);
+        videoEl.attr("src", "" );
      });
 
      //user presses return back while in detail page
      returnBackBtn.on("click", ()=>{
-        showOrHidePage("detail-page", false);
+        
         showOrHidePage("index-games");
         showOrHidePage("games");
+        showOrHidePage("detail-page", false);
+        videoEl.attr("src", "" );
      });
 
      //display
