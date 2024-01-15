@@ -26,9 +26,9 @@ This project is built using `HTML`, a CSS framework called `Tawilwind CSS` and `
 
 
 
-### Video Demo
-
 ### Images
+![Home](./main.png)
+
 
 ## Documentation
 
