@@ -98,7 +98,7 @@ THEN: I am presented with the news articles in a third party website.
 | [Suyash Maharjan](https://github.com/SimpleSuyash)            | Full-Stack Development                    | API, Rendering, Design, Local Storage |
 
 
--  API Guides
+-  API & Guides
 -  [Working in Branches](https://thenewstack.io/dont-mess-with-the-master-working-with-branches-in-git-and-github/)
 	- [Tutorial RAWG API](https://api.rawg.io/docs/#tag/platforms)
  	- [Tutorial GameSpot API](https://www.gamespot.com/api/documentation)
