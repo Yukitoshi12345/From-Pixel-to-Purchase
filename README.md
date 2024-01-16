@@ -9,6 +9,7 @@ Imagine brainstorming game ideas, only to get swamped by irrelevant comics and T
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Usage](#Usage)
+- [Instruction](#instruction)
 - [Overview](#overview)
 - [Screenshots](#screenshots)
 - [APIs Used](#apis-used)
@@ -60,6 +61,7 @@ THEN: I am presented with the news articles in a third party website.
 | Clone this repo      | ` git clone git@github.com:Yukitoshi12345/The-University-of-Gaming.git` |
 | run on vs | ` cd .. `                                                           |
 
+## Instruction
 
 ## Overview
 
