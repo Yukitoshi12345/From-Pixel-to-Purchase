@@ -1,4 +1,4 @@
-![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript JQuerry](https://img.shields.io/badge/Javascript-JQuery-orange) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-black) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-black) ![GameSpot APIs](https://img.shields.io/badge/GameSpot-APIs-black) 
+![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript JQuery](https://img.shields.io/badge/Javascript-JQuery-orange) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-black) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-black) ![GameSpot APIs](https://img.shields.io/badge/GameSpot-APIs-black) 
 
 # The University of Gaming
 
@@ -80,14 +80,14 @@ Page 3: Game Details Page
 
 
 ## APIs Used
-- [RAWG game database API](https://rawg.io/apidocs)  
+- [RAWG Game Database API](https://rawg.io/apidocs)  
 ```md   
 URL: https://api.rawg.io/api/games?key=[YOUR API KEY]
 URL: https://api.rawg.io/api/games/id?key=[YOUR API KEY]
 URL: https://rawg.io/api/games/${slug}/screenshots?key=[YOUR API KEY]
 ```          
 
-- [Gamespot game database API](https://www.gamespot.com/api/) 
+- [Gamespot Game Database API](https://www.gamespot.com/api/) 
 ```md          
 URL: https://www.gamespot.com/api/articles/?api_key=[YOUR API KEY]
 URL: https://www.gamespot.com/api/videos/?api_key=[YOUR API KEY]
