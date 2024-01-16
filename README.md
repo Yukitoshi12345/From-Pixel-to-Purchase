@@ -43,7 +43,7 @@ THEN: The page should display comprehensive information, including title, releas
 Scenario: Navigating Recently Searched Games
 GIVEN: I am on the homepage of the University of Gaming
 	WHEN: I click on recently searched games
-THEN: I am presented with the 13 most recent game searches
+THEN: I am presented with the 5 most recent game searches
 	WHEN: I click on a game under the most recent game search
 THEN: The page guides me through the process of recognising and selecting the game title.
 
