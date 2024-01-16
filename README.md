@@ -4,11 +4,7 @@
 
 ## Introduction
 
-As a coding student and an avid video gamer, I often muse on new game ideas. Then as everyone would, I do a google search which presents results relating to the keyword/s I have typed in. But the result is so diverse; it includes from comics to tv shows. And then again, to find the right information(including pictures, video, and so on) I am looking for, I have to endlessly click on the plethora of links. These are the issues *The University of Gaming* aims to solve. By centralizing the search process and limiting the results from two biggest dedicated gaming databases namely *RawG* and *Gamespot*, the process of finding a game you are thinking could not be more simpler. Also, the thoughtfully designed UI/UX is a joy to use rather than tediously pursuing mundane google links. And because this app helps you learn about games and gaming articles, hence it is named **The University of Gaming**.
-
-*The University of Gaming* is a 3 pages app where initially an user can search for a game by typing in keyword/s. The search returns a list of related games in the second page in nicely designed cards with a small picture and title, released date and platforms on it. It displays 6 results/games per page. The user can navigate through these search results by pressing *❮❮Previous Page* and *Next Page❯❯* buttons. A user can also view enlarged picture of a game by clicking on the image on the card. Pressing *Find out More* button on any of the cards will take the user to the third page. This is where the user can see the detailed information about the selected game. The information such as title, description, developers, publishers, platforms, tags, genres, rating and released dates.
-
-The first and second pages also have a section at the left hand side where the user can see the list of top 10 recent gaming news articles. Clicking on the link will open the article in a third party website.
+Imagine brainstorming game ideas, only to get swamped by irrelevant comics and TV shows in your Google search. Frustrating, right? The University of Gaming cuts through the clutter. Say goodbye to endless clicking and hello to a curated portal to the world of video games. Think two massive gaming databases, *RawG* and *Gamespot*, beautifully condensed and presented in sleek, bite-sized cards. No more information overload! Find release dates, platforms, and screenshots at your fingertips. Dive deeper with "Find Out More" for detailed descriptions, developer insights, and ratings. All this, alongside a fresh feed of gaming news, keeps you informed and entertained without leaving the app.
 
 
 - [Usage](#Usage)
@@ -69,13 +65,13 @@ Page 1: Index Page:
 Recently Searched Games:                 
 ![image](assets/screenshots/ls.png)
 
-Top 10 recent gaming new articles               
+Top 10 Recent Gaming New Articles:               
 ![image](assets/screenshots/articles.png)
 
-Page 2: Games Page (search results)               
+Page 2: Games Page (Search Results)          
 ![image](assets/screenshots/games.png)
 
-Page 3: Game Details Page                
+Page 3: Game Details Page        
 ![image](assets/screenshots/details.png)
 
 
@@ -112,16 +108,16 @@ URL: https://www.gamespot.com/api/videos/?api_key=[YOUR API KEY]
 
 | Contributors                                                  | Roles                        | Task
 | --------------------                                          | -------------------------    |---------------------------------------------  	|
-| [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345)  | Project Manager/Developer	   | Create and Maintain Github Repo<br>Assign  Task and Manage Progress<br>Develop Game Details Feature<br>Create README.md|
-| [Darren Doan](https://github.com/darrendoan)                  | Developer                    | Develop Game Search Feature |
-| [Muhamad Sahid](https://github.com/BrxwnSugxr)                | Developer     			   | Develop Gaming News Article Feature<br> Prepare Presentation Slideshow  |
-| [Suyash Maharjan](https://github.com/SimpleSuyash)            | UI Designer/Technical Lead   |  Lead Coding Team <br> Develop User Interface <br> Develop Game Video and Screenshots Slideshow Feature|
+| [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345)  | Project Manager/Developer	   | Create and Maintain Github Repo<br>Assign  Task and Manage Progress<br>Developed Game Details Feature|
+| [Darren Doan](https://github.com/darrendoan)                  | Developer                    | Developed Game Search Feature |
+| [Muhamad Sahid](https://github.com/BrxwnSugxr)                | Developer     			   | Developed Gaming News Article Feature<br> Prepare Presentation Slideshow  |
+| [Suyash Maharjan](https://github.com/SimpleSuyash)            | UI Designer/Technical Lead   |  Lead Coding Team <br> Develop User Interface <br> Developed Game Video and Screenshots Slideshow Feature|
 
 *The roles mentioned above are rough representation of individual memeber's tasks. Thoroughout the project, we all collaborated and contributed to each other's coding.*
 
 ## Installation instruction      
 - [Install nodejs and npm](https://nodejs.org/en/download)    
-Node.js is for npm only. The project doesn't use the Node.js in any other way.
+Node.js is for npm only. The project doesn't use the Node.js in any other way. It is a requirement to use Tailwind css.
 - [Install Tailwind CSS](https://tailwindcss.com/docs/installation)   
 Follow the instructions under Tailwind CLI
 - CORS: Access-Control-Allow-Origin. This extension is needed to be installed and turned on for the weekly game articles and game video. Please follow the instruction below for more information.    
