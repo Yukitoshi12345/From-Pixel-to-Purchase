@@ -1,4 +1,4 @@
-![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript JQuery](https://img.shields.io/badge/Javascript-JQuery-orange) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-black) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-black) ![GameSpot APIs](https://img.shields.io/badge/GameSpot-APIs-black) 
+![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript JQuery](https://img.shields.io/badge/Javascript-JQuery-orange) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Daisy UI](https://img.shields.io/badge/Daisy-UI-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-black) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-black) ![GameSpot APIs](https://img.shields.io/badge/GameSpot-APIs-black) 
 
 # The University of Gaming
 
