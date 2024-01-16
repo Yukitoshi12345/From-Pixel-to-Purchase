@@ -32,7 +32,7 @@ ensuring I stay informed about latest gaming news.
 Scenario: Exploring Game Title
 GIVEN: I am on the homepage of The University of Gaming
 	WHEN: I search for the game in the search bar
-THEN: The search bar should provide instant and relevant suggestions as I type, guiding me through the process of recognising and selecting the game title I am looking for.
+THEN: The page will guide me through the process of recognising and selecting the game title I am looking for.
 
 Scenario: Viewing Detailed Game Profiles
 GIVEN: I have found a game title and clicked on it
@@ -140,7 +140,7 @@ URL: https://www.gamespot.com/api/videos/?api_key={YOUR-API-KEY}
 
 | Contributors                                                  | Roles                        | Task
 | --------------------                                          | -------------------------    |---------------------------------------------  	|
-| [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345)  | Project Manager/Developer	   | Create and Maintain Github Repo<br>Assign  Task and Manage Progress<br>Developed Game Details Feature|
+| [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345)  | Project Manager/Developer	   | Create and Maintain Github Repo<br>Assign Tasks and Manage Progress<br>Developed Game Details Feature|
 | [Darren Doan](https://github.com/darrendoan)                  | Developer                    | Developed Game Search Feature |
 | [Muhamad Sahid](https://github.com/BrxwnSugxr)                | Developer     			   | Developed Gaming News Article Feature<br> Prepare Presentation Slideshow  |
 | [Suyash Maharjan](https://github.com/SimpleSuyash)            | UI Designer/Technical Lead   |  Lead Coding Team <br> Develop User Interface <br> Developed Game Video and Screenshots Slideshow Feature|
