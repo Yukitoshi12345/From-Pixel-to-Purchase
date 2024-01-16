@@ -1,7 +1,6 @@
 $(document).ready(()=>{
     const rawGKey = "66d3737f6f13454880d0fe3f9948fa06";
     const gamespotKey ="6493f75acb2827c70912c6f769c7649ed167342a";
-    const giantBombKey ="44f9c228b9f178613033839ebfd62f00e49ff1f6";
 
     const inputEl = $(".game-input");
     const searchBtn = $(".search");
