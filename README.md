@@ -113,11 +113,9 @@ Recently Searched Games:
 
 Page 2 - Games Page (Search Results):          
 ![image](assets/screenshots/games.png)
-
-Page 3 - Game Details Page:        
-Top 10 Recent Gaming New Articles:               
-![image](assets/screenshots/articles.png)
-
+      
+Page 3 - Game Detail page:               
+![image](assets/screenshots/details.png)
 
 ## APIs Used
 - [RAWG Game Database API](https://rawg.io/apidocs)  
