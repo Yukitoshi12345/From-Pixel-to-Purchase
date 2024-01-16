@@ -1,6 +1,6 @@
 ![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript JQuery](https://img.shields.io/badge/Javascript-JQuery-orange) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Daisy UI](https://img.shields.io/badge/Daisy-UI-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-black) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-black) ![GameSpot APIs](https://img.shields.io/badge/GameSpot-APIs-black) 
 
-# The University of Gaming
+<h1 align="center">The University of Gaming</h1>
 
 Imagine brainstorming game ideas, only to get swamped by irrelevant comics and TV shows in your Google search. Frustrating, right? The University of Gaming cuts through the clutter. Say goodbye to endless clicking and hello to a curated portal to the world of video games. Think two massive gaming databases, *RawG* and *Gamespot*, beautifully condensed and presented in sleek, bite-sized cards. No more information overload! Find release dates, platforms, and screenshots at your fingertips. Dive deeper with "Find Out More" for detailed descriptions, developer insights, and ratings. All this, alongside a fresh feed of gaming news, keeps you informed and entertained without leaving the app.
 
