@@ -2,15 +2,18 @@
 
 # The University of Gaming
 
-## Introduction
-
 Imagine brainstorming game ideas, only to get swamped by irrelevant comics and TV shows in your Google search. Frustrating, right? The University of Gaming cuts through the clutter. Say goodbye to endless clicking and hello to a curated portal to the world of video games. Think two massive gaming databases, *RawG* and *Gamespot*, beautifully condensed and presented in sleek, bite-sized cards. No more information overload! Find release dates, platforms, and screenshots at your fingertips. Dive deeper with "Find Out More" for detailed descriptions, developer insights, and ratings. All this, alongside a fresh feed of gaming news, keeps you informed and entertained without leaving the app.
 
 ## Table of Contents
 
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
 - [Usage](#Usage)
-- [Documentation](#Documentation)
-- [Credit](#Credit)
+- [Screenshots](#screenshots)
+- [APIs Used](#apis-used)
+- [Technologies Used](#technologies-used)
+- [Contribution/Roles](#contributionroles)
+- [Installation Instruction](#installation-instruction)
 - [License](#license)
 
 ## User Story
@@ -90,7 +93,7 @@ URL: https://www.gamespot.com/api/articles/?api_key=[YOUR API KEY]
 URL: https://www.gamespot.com/api/videos/?api_key=[YOUR API KEY]
 ```             
 
-## Technologies Implemented
+## Technologies Used
 - HTML
 - CSS
 - CSS Framework
@@ -116,7 +119,7 @@ URL: https://www.gamespot.com/api/videos/?api_key=[YOUR API KEY]
 
 *The roles mentioned above are rough representation of individual memeber's tasks. Thoroughout the project, we all collaborated and contributed to each other's coding.*
 
-## Installation instruction      
+## Installation Instruction      
 - [Install nodejs and npm](https://nodejs.org/en/download)    
 Node.js is for npm only. The project doesn't use the Node.js in any other way. It is a requirement to use Tailwind css.
 - [Install Tailwind CSS](https://tailwindcss.com/docs/installation)   
