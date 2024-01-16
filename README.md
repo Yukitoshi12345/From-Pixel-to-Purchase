@@ -9,6 +9,7 @@ Imagine brainstorming game ideas, only to get swamped by irrelevant comics and T
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
 - [Usage](#Usage)
+- [Overview](#overview)
 - [Screenshots](#screenshots)
 - [APIs Used](#apis-used)
 - [Technologies Used](#technologies-used)
@@ -50,8 +51,8 @@ GIVEN: I am on the homepage of the University of Gaming
 	WHEN: I click on a list of links under the Weekly Video Game Articles
 THEN: I am presented with the news articles in a third party website.
 ```
-## Usage
 
+## Usage
 
 | Steps                | Details                                                                  |
 | -------------------- | ------------------------------------------------------------------------ |
@@ -60,7 +61,34 @@ THEN: I am presented with the news articles in a third party website.
 | run on vs | ` cd .. `                                                           |
 
 
+## Overview
 
+#### Features:
+- Game Search
+- New User Articles
+- Game Details
+- Video
+- Picture Slideshow
+
+
+#### Motivation For Development:
+A passionate gamer, and this has given us the incentive to address an issue we face. 
+
+
+#### Challenges:
+- Divergent initial approaches complicated project scope and vision.
+- The merge conflict in Git Collaboration caused initial confusion
+- Learning Tailwind CSS and Daisy UI.
+- Encountered hurdles with Amazon's documentation which was our original second API, forcing us to explore alternative options. 
+- JQuery, Tailwind CSS, Daisy UI issue linking pages brought its own challenges
+- Inconsistent code layout and a lack of code commenting initially hampered collaboration.
+
+
+#### Successes:
+- Project transcended technical skills, becoming a journey of personal and professional development through virtual collaboration.
+- Online collaboration fostered community and enjoyment, transforming strangers into friends and productive teammates.
+- Learning New Framework: Tailwind CSS and Daisy UI.
+- Designing Responsive Web Applications for Optimal User Experience and Enjoyment.
 
 ## Screenshots
 Page 1: Index Page:             
