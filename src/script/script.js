@@ -47,7 +47,7 @@ $(document).ready(()=>{
             url= result.site_detail_url;
             // console.log(`title: ${title}`);
             // console.log(`url: ${url}`);
-            recentArticlesEl.append(`<li class ="hover:text-amber-100 hover:cursor-pointer hover:text-lg border-b-2 border-amber-50" data-url="${url}">${index}.${title}</li>`)
+            recentArticlesEl.append(`<li class ="hover:text-amber-100 hover:cursor-pointer hover:text-lg border-b-2 border-amber-50" data-url="${url}">${index + 1}.${title}</li>`)
         });
     }
     //displays the video of the game on the detail page
@@ -525,7 +525,7 @@ $(document).ready(()=>{
         videoEl.attr("src", "" );
      });
 
-     //display
+     //displays 10 most recent gaming articles
      function displayTop10RecentArticles(){
         const url=`https://www.gamespot.com/api/articles/?api_key=${gamespotKey}&format=json&sort=publish_date:desc&limit=10`;
         fetchGamespotData(url, "articles");
