@@ -11,10 +11,6 @@ As a coding student and an avid video gamer, I often muse on new game ideas. The
 The first and second pages also have a section at the left hand side where the user can see the list of top 10 recent gaming news articles. Clicking on the link will open the article in a third party website.
 
 
-
-
-
-
 - [Usage](#Usage)
 - [Documentation](#Documentation)
 - [Credit](#Credit)
