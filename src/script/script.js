@@ -55,9 +55,8 @@ $(document).ready(()=>{
     //displays the video of the game on the detail page
     function displayVideo(response){
         let results = response.results;
-        //default link
-        //in case any video is not found for a given game
-        let src ="https://video.gamespot.com/2022/10/14/7f80585a-d61b-49f2-a0ff-d0301e64934d/Feature_GodofLoreLoki_10142022_1080h5000k.mp4";
+        
+        let src;
         
         //look through the results and get the first hd video
         results.forEach(result=>{
@@ -75,8 +74,11 @@ $(document).ready(()=>{
                 }
             });
         }
-        console.log("src");
-        console.log(src);
+        ///default link
+        //in case any video is not found for a given game
+        if(src === ""){
+            src ="https://video.gamespot.com/2022/10/14/7f80585a-d61b-49f2-a0ff-d0301e64934d/Feature_GodofLoreLoki_10142022_1080h5000k.mp4";
+        }
         videoEl.attr("src", src );
     }
     
