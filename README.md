@@ -63,6 +63,9 @@ THEN: I am presented with the news articles in a third party website.
 
 ## Instruction
 
+*The University of Gaming* is a 3 pages app where initially an user can search for a game by typing in keyword/s. The search returns a list of related games in the second page in nicely designed cards with a small picture and title, released date and platforms on it. It displays 6 results/games per page. The user can navigate through these search results by pressing *❮❮Previous Page* and *Next Page❯❯* buttons. The user can also view enlarged picture of a game by clicking on the image on the card. Pressing *Find out More* button on any of the cards will take the user to the third page. This is where the user can see the detailed information about the selected game. The information such as title, description, developers, publishers, platforms, tags, genres, rating and released dates.
+
+
 ## Overview
 
 #### Features:
@@ -93,20 +96,28 @@ As a passionate gamer, this has given us the incentive to address an issue we fa
 - Designing Responsive Web Applications for Optimal User Experience and Enjoyment.
 
 ## Screenshots
-Page 1: Index Page:             
+Page 1 - Index Page:             
 ![image](assets/screenshots/index.png)
+
+Page 1 - Index Page on medium screen:
+![image](assets/screenshots/index-md.png)     
+
+Page 1 - Index Page on small screen:          
+![image](assets/screenshots/index-sm.png)      
 
 Recently Searched Games:                 
 ![image](assets/screenshots/ls.png)
 
-Top 10 Recent Gaming New Articles:               
+10 Most Recent Gaming New Articles:               
 ![image](assets/screenshots/articles.png)
 
-Page 2: Games Page (Search Results)          
+Page 2 - Games Page (Search Results):          
 ![image](assets/screenshots/games.png)
 
-Page 3: Game Details Page        
-![image](assets/screenshots/details.png)
+Page 3 - Game Details Page:        
+=======
+Top 10 Recent Gaming New Articles:               
+![image](assets/screenshots/articles.png)
 
 
 ## APIs Used
@@ -158,5 +169,5 @@ Follow the instructions under Tailwind CLI
 [https://chromewebstore.google.com/detail/lhobafahddgcelffkeicbaginigeejlf](https://chromewebstore.google.com/detail/lhobafahddgcelffkeicbaginigeejlf)
 
 
-## License
+## Licence
 This project is licensed under the [MIT License](https://github.com/Yukitoshi12345/The-University-of-Gaming/blob/main/LICENSE).
