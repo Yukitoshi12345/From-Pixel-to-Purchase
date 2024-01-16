@@ -45,9 +45,11 @@ $(document).ready(()=>{
 
             title = result.title;
             url= result.site_detail_url;
+
             // console.log(`title: ${title}`);
             // console.log(`url: ${url}`);
             recentArticlesEl.append(`<li class ="hover:text-amber-100 hover:cursor-pointer hover:text-lg border-b-2 border-amber-50" data-url="${url}">${index + 1}.${title}</li>`)
+
         });
     }
     //displays the video of the game on the detail page
@@ -247,10 +249,8 @@ $(document).ready(()=>{
             gamesContentEl.addClass("hidden");
         //when games are found as a search result
         }else{
-            //only save the search if there is a matched game result
-            saveTheSearchToLS(inputEl.val().trim().toLowerCase());
+            saveTheSearchToLS(inputEl.val());
             displayRecentSearches();
-            
             result404.addClass("hidden");
             gamesContentEl.removeClass("hidden");
             gameCardsContainer.html("");
@@ -291,6 +291,7 @@ $(document).ready(()=>{
                 showOrHidePage("index", false);
                 showOrHidePage("games");
                 displayGames(data);
+                inputEl.val("");
             }else if(dataOf === "gameDetail"){
                 console.log("-----------------fetching the game detail data");
                 console.log(data);
@@ -355,8 +356,7 @@ $(document).ready(()=>{
             //so most recent search will be on the top of the list
             }else{ 
                 searches = recentSearches.filter(search=>{
-                    //check if they are same two words, ignoring the case
-                    return search.toLowerCase() != queryString.toLowerCase();
+                    return search != queryString;
                 });
                 recentSearches=searches;
                 //the search list is limited to 13 items
@@ -383,10 +383,15 @@ $(document).ready(()=>{
     }
 
     //checks if the user input for the game name is empty
-    function validateGameNameInput(string){
-        if(string.length >=1){
+    function validateGameNameInput(){
+        const input = inputEl.val().trim();
+        if(input.length >=1){
             return true;
+        //if it is empty, remove the empty string
+        //put the focus back to the input element
         }else{
+           inputEl.val("");
+           inputEl.focus();
            return false;
         }
     }
@@ -410,28 +415,9 @@ $(document).ready(()=>{
 
     //when search button is pressed
     searchBtn.on("click", ()=>{
-        //trim the whitespaces and make it all lowercase
-        const searchQuery = inputEl.val().trim().toLowerCase();
-        //when validation is successful
-        //fetch the games and displays
-        if(validateGameNameInput(searchQuery)){
-            fetchGames(searchQuery);
-            /*
-            the following method saves any valid game search string,
-            any random string, for example: djkjkcjk87008s;/?
-            even if there are no games found for the search
-            //save the searched game in the local storage
-            //and show the updated search list
-            saveTheSearchToLS(searchQuery);
-            displayRecentSearches();
-            */
-        //if validation fails
-        //put the focus back to the input element
-        //remove the previously searched game user input
-        //making ready for another search
-        }else {
-            inputEl.focus();
-            inputEl.val("");
+        const searchQuery = inputEl.val();
+        if(validateGameNameInput()){
+             fetchGames(searchQuery);
         }
     });
 
@@ -444,29 +430,15 @@ $(document).ready(()=>{
 
     //after typing in user input and pressing Enter key
     inputEl.on("keyup", e =>{
+        console.log("key " + e.key);
         if(e.key === "Enter"){
             e.preventDefault();
-            //removing whitespace and changing to all lowercase
-            const searchQuery = inputEl.val().trim().toLowerCase();
-            //when validation is successful
-            //fetch the games and displays
-            
-            if(validateGameNameInput(searchQuery)){
+            const searchQuery = inputEl.val();
+            if(searchQuery.trim().length!==0){
+                saveTheSearchToLS(searchQuery);
+                displayRecentSearches();
                 fetchGames(searchQuery);
-                /*
-                    the following method saves any valid game search string,
-                    any random string, for example: djkjkcjk87008s;/?
-                    even if there are no games found for the search
-                    //save the searched game in the local storage
-                    //and show the updated search list
-                    saveTheSearchToLS(searchQuery);
-                    displayRecentSearches();
-                */
-            }else {
-                //remove the previously searched game user input
-                //making ready for another search
                 inputEl.val("");
-                inputEl.focus();
             }
         }
     });
@@ -485,7 +457,6 @@ $(document).ready(()=>{
      returnBtn.on("click", ()=>{
        showOrHidePage("index");
        inputEl.focus();
-       inputEl.val("");
        showOrHidePage("games", false);
      });
 

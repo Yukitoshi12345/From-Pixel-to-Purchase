@@ -964,12 +964,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+
 .bg-\[url\(\'\.\.\/\.\.\/assets\/image\/pasted\.png\'\)\]{
   background-image: url('../../assets/image/pasted.png');
 }
 
-.bg-\[url\(\'\/assets\/image\/pasted\.png\'\)\]{
-  background-image: url('/assets/image/pasted.png');
 }
 
 .bg-gradient-to-r{
@@ -1028,6 +1027,7 @@ video {
 
 .bg-cover{
   background-size: cover;
+  background-image: url('../../assets/image/pasted.png')
 }
 
 .bg-clip-text{
