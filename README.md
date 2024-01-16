@@ -82,15 +82,15 @@ Page 3: Game Details Page
 ## APIs Used
 - [RAWG Game Database API](https://rawg.io/apidocs)  
 ```md   
-URL: https://api.rawg.io/api/games?key=[YOUR API KEY]
-URL: https://api.rawg.io/api/games/id?key=[YOUR API KEY]
-URL: https://rawg.io/api/games/${slug}/screenshots?key=[YOUR API KEY]
+URL: https://api.rawg.io/api/games?key={YOUR-API-KEY}
+URL: https://api.rawg.io/api/games/id?key={YOUR-API-KEY}
+URL: https://rawg.io/api/games/${slug}/screenshots?key={YOUR-API-KEY}
 ```          
 
 - [Gamespot Game Database API](https://www.gamespot.com/api/) 
 ```md          
-URL: https://www.gamespot.com/api/articles/?api_key=[YOUR API KEY]
-URL: https://www.gamespot.com/api/videos/?api_key=[YOUR API KEY]
+URL: https://www.gamespot.com/api/articles/?api_key={YOUR-API-KEY}
+URL: https://www.gamespot.com/api/videos/?api_key={YOUR-API-KEY}
 ```             
 
 ## Technologies Used
