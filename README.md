@@ -67,14 +67,14 @@ THEN: I am presented with the news articles in a third party website.
 
 #### Features:
 - Game Search
-- New User Articles
+- Recent Gaming New Articles
 - Game Details
 - Video
 - Picture Slideshow
 
 
 #### Motivation For Development:
-A passionate gamer, and this has given us the incentive to address an issue we face. 
+As a passionate gamer, this has given us the incentive to address an issue we face. 
 
 
 #### Challenges:
