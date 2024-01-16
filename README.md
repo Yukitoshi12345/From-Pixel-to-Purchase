@@ -63,7 +63,7 @@ THEN: I am presented with the news articles in a third party website.
 
 ## Instruction
 
-*The University of Gaming* is a 3 pages app where initially an user can search for a game by typing in keyword/s. The search returns a list of related games in the second page in nicely designed cards with a small picture and title, released date and platforms on it. It displays 6 results/games per page. The user can navigate through these search results by pressing *❮❮Previous Page* and *Next Page❯❯* buttons. The user can also view enlarged picture of a game by clicking on the image on the card. Pressing *Find out More* button on any of the cards will take the user to the third page. This is where the user can see the detailed information about the selected game. The information such as title, description, developers, publishers, platforms, tags, genres, rating and released dates.
+*The University of Gaming* is a 3 pages app where initially an user can search for a game by typing in keyword/s. The search returns a list of related games in the second page in nicely designed cards with a small picture and title, released date and platforms on it. It displays 6 results/games per page. The user can navigate through these search results by pressing *❮❮Previous Page* and *Next Page❯❯* buttons. The user can also view enlarged picture of a game by clicking on the image on the card. Pressing *Find out More* button on any of the cards will take the user to the third page. This is where the user can see the detailed information about the selected game. The information gives the title, description, developers, publishers, platforms, tags, genres, rating and released dates.
 
 
 ## Overview
@@ -115,7 +115,6 @@ Page 2 - Games Page (Search Results):
 ![image](assets/screenshots/games.png)
 
 Page 3 - Game Details Page:        
-=======
 Top 10 Recent Gaming New Articles:               
 ![image](assets/screenshots/articles.png)
 
