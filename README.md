@@ -108,7 +108,7 @@ Page 1 - Index Page on small screen:
 Recently Searched Games:                 
 ![image](assets/screenshots/ls.png)
 
-10 Most Recent Gaming New Articles:               
+10 Most Recent Gaming News Articles:               
 ![image](assets/screenshots/articles.png)
 
 Page 2 - Games Page (Search Results):          
