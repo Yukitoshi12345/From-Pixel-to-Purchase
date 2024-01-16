@@ -117,7 +117,7 @@ URL: https://www.gamespot.com/api/videos/?api_key=[YOUR API KEY]
 | [Muhamad Sahid](https://github.com/BrxwnSugxr)                | Developer     			   | Developed Gaming News Article Feature<br> Prepare Presentation Slideshow  |
 | [Suyash Maharjan](https://github.com/SimpleSuyash)            | UI Designer/Technical Lead   |  Lead Coding Team <br> Develop User Interface <br> Developed Game Video and Screenshots Slideshow Feature|
 
-*The roles mentioned above are rough representation of individual memeber's tasks. Thoroughout the project, we all collaborated and contributed to each other's coding.*
+*The roles mentioned above are rough representation of individual member's tasks. Thoroughout the project, we all collaborated and contributed to each other's coding.*
 
 ## Installation Instruction      
 - [Install nodejs and npm](https://nodejs.org/en/download)    
