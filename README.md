@@ -99,10 +99,10 @@ As a passionate gamer, this has given us the incentive to address an issue we fa
 Page 1 - Index Page:             
 ![image](assets/screenshots/index.png)
 
-Page 1 - Index Page on medium screen:
+Page 1 - Index Page on Medium Screen:
 ![image](assets/screenshots/index-md.png)     
 
-Page 1 - Index Page on small screen:          
+Page 1 - Index Page on Small Screen:          
 ![image](assets/screenshots/index-sm.png)      
 
 Recently Searched Games:                 
@@ -114,7 +114,7 @@ Recently Searched Games:
 Page 2 - Games Page (Search Results):          
 ![image](assets/screenshots/games.png)
       
-Page 3 - Game Detail page:               
+Page 3 - Game Detail Page:               
 ![image](assets/screenshots/details.png)
 
 ## APIs Used
