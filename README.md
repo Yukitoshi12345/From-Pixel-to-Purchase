@@ -150,10 +150,10 @@ URL: https://www.gamespot.com/api/videos/?api_key={YOUR-API-KEY}
 
 | Contributors                                                  | Roles                        | Task
 | --------------------                                          | -------------------------    |---------------------------------------------  	|
-| [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345)  | Project Manager/Developer	   | Create and Maintain Github Repo<br>Assign Tasks and Manage Progress<br>Developed Game Details Feature|
+| [Yukitoshi Imaizumi-Zhou](https://github.com/yukitoshi12345)  | Project Manager/Developer	   | Created and Maintained Github Repository<br> Created and Completed README<br> Assign Tasks and Manage Progress<br>Developed Game Details Feature|
 | [Darren Doan](https://github.com/darrendoan)                  | Developer                    | Developed Game Search Feature |
-| [Muhamad Sahid](https://github.com/BrxwnSugxr)                | Developer     			   | Developed Gaming News Article Feature<br> Prepare Presentation Slideshow  |
-| [Suyash Maharjan](https://github.com/SimpleSuyash)            | UI Designer/Technical Lead   |  Lead Coding Team <br> Develop User Interface <br> Developed Game Video and Screenshots Slideshow Feature|
+| [Muhamad Sahid](https://github.com/BrxwnSugxr)                | Developer     			   | Developed Gaming News Article Feature<br> Prepared Presentation Slideshow  |
+| [Suyash Maharjan](https://github.com/SimpleSuyash)            | UI Designer/Technical Lead   |  Lead Coding Team <br> Developed User Interface <br> Developed Game Video and Screenshots Slideshow Feature|
 
 *The roles mentioned above are rough representation of individual member's tasks. Thoroughout the project, we all collaborated and contributed to each other's coding.*
 
