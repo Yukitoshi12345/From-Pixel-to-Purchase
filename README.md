@@ -1,5 +1,4 @@
-![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript JQuerry](https://img.shields.io/badge/Javascript-JQuery-orange) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-black) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-black) ![Youtube APIs](https://img.shields.io/badge/Youtube-APIs-black) ![Marvel APIs](https://img.shields.io/badge/Marvel-APIs-black) 
-
+![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript JQuerry](https://img.shields.io/badge/Javascript-JQuery-orange) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-black) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-black) ![GameSpot APIs](https://img.shields.io/badge/GameSpot-APIs-black) 
 
 # The University of Gaming
 
@@ -11,11 +10,10 @@ As a coding student and an avid video gamer, I often muse on new game ideas. The
 
 The first and second pages also have a section at the left hand side where the user can see the list of top 10 recent gaming news articles. Clicking on the link will open the article in a third party website.
 
-This project is built using *HTML*, *CSS*, *Javascript*.
 
 
 
-## Table of Contents ------------needs updating, Yuki to do
+
 
 - [Usage](#Usage)
 - [Documentation](#Documentation)
@@ -24,8 +22,8 @@ This project is built using *HTML*, *CSS*, *Javascript*.
 
 ## User Story
 ```md
-AS A dedicated gamer,
-My mind is constantly immersed in thoughts of video games.
+As a junior software developer I have different ideas of new games. 
+Also, as A dedicated gamer, My mind is constantly immersed in thoughts of video games.
 Whether pondering a new concept or exploring existing titles,
 I actively seek information to satisfy my curiosity. 
 I eagerly pursue new weekly game articles, 
@@ -46,8 +44,10 @@ THEN: The page should display comprehensive information, including title, releas
 
 Scenario: Navigating Recently Searched Games
 GIVEN: I am on the homepage of the University of Gaming
-	WHEN: I click on a game in the recently searched games list
-THEN: The page guides me through the process of recognising and selecting the game title I am looking for.
+	WHEN: I click on recently searched games
+THEN: I am presented with the 13 most recent game searches
+	WHEN: I click on a game under the most recent game search
+THEN: The page guides me through the process of recognising and selecting the game title.
 
 Scenario: Viewing Weekly Video Game Articles
 GIVEN: I am on the homepage of the University of Gaming
@@ -56,11 +56,14 @@ THEN: I am presented with the news articles in a third party website.
 ```
 ## Usage
 
+
 | Steps                | Details                                                                  |
 | -------------------- | ------------------------------------------------------------------------ |
 | Live application |  [The University of Gaming](https://yukitoshi12345.github.io/The-University-of-Gaming/)                                                           |
 | Clone this repo      | ` git clone git@github.com:Yukitoshi12345/The-University-of-Gaming.git` |
 | run on vs | ` cd .. `                                                           |
+
+
 
 
 ## Screenshots
@@ -125,6 +128,8 @@ URL: https://www.gamespot.com/api/videos/?api_key=[YOUR API KEY]
 Node.js is for npm only. The project doesn't use the Node.js in any other way.
 - [Install Tailwind CSS](https://tailwindcss.com/docs/installation)   
 Follow the instructions under Tailwind CLI
+- CORS: Access-Control-Allow-Origin. This extension is needed to be installed and turned on for the weekly game articles and game video. Please follow the instruction below for more information.    
+[https://chromewebstore.google.com/detail/lhobafahddgcelffkeicbaginigeejlf](https://chromewebstore.google.com/detail/lhobafahddgcelffkeicbaginigeejlf)
 
 
 ## License
