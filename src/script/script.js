@@ -502,8 +502,7 @@ $(document).ready(()=>{
 
      //displays 10 most recent gaming articles
      function displayTop10RecentArticles(){
-        const today = new Date();
-        const url=`https://www.gamespot.com/api/articles/?api_key=${gamespotKey}&format=json&sort=publish_date:desc&limit=10`;
+        const url=`https://www.gamespot.com/api/articles/?api_key=${gamespotKey}&format=json&sort=publish_date:desc&limit=5`;
         fetchGamespotData(url, "articles");
      }
      //when the page loads, it shows 
