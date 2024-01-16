@@ -1,6 +1,6 @@
 ![HTML CSS](https://img.shields.io/badge/HTML-CSS-blue) ![JavaScript JQuery](https://img.shields.io/badge/Javascript-JQuery-orange) ![Tailwind CSS](https://img.shields.io/badge/Tailwind-CSS-green) ![Daisy UI](https://img.shields.io/badge/Daisy-UI-green) ![Server-Side APIs](https://img.shields.io/badge/Server-SideAPIs-black) ![RAWG APIs](https://img.shields.io/badge/RAWG-APIs-black) ![GameSpot APIs](https://img.shields.io/badge/GameSpot-APIs-black) 
 
-<h1 align="center">The University of Gaming</h1>
+<h1 align ="center">The University of Gaming</h1>
 
 Imagine brainstorming game ideas, only to get swamped by irrelevant comics and TV shows in your Google search. Frustrating, right? The University of Gaming cuts through the clutter. Say goodbye to endless clicking and hello to a curated portal to the world of video games. Think two massive gaming databases, *RawG* and *Gamespot*, beautifully condensed and presented in sleek, bite-sized cards. No more information overload! Find release dates, platforms, and screenshots at your fingertips. Dive deeper with "Find Out More" for detailed descriptions, developer insights, and ratings. All this, alongside a fresh feed of gaming news, keeps you informed and entertained without leaving the app.
 
@@ -21,7 +21,7 @@ Imagine brainstorming game ideas, only to get swamped by irrelevant comics and T
 ## User Story
 ```md
 As a junior software developer I have different ideas of new games. 
-Also, as A dedicated gamer, My mind is constantly immersed in thoughts of video games.
+Also, as a dedicated gamer, My mind is constantly immersed in thoughts of video games.
 Whether pondering a new concept or exploring existing titles,
 I actively seek information to satisfy my curiosity. 
 I eagerly pursue new weekly game articles, 
@@ -82,10 +82,10 @@ As a passionate gamer, this has given us the incentive to address an issue we fa
 
 #### Challenges:
 - Divergent initial approaches complicated project scope and vision.
-- The merge conflict in Git Collaboration caused initial confusion
+- The merge conflict in Git Collaboration caused initial confusion.
 - Learning Tailwind CSS and Daisy UI.
 - Encountered hurdles with Amazon's documentation which was our original second API, forcing us to explore alternative options. 
-- JQuery, Tailwind CSS, Daisy UI issue linking pages brought its own challenges
+- JQuery, Tailwind CSS, Daisy UI issue linking pages brought its own challenges.
 - Inconsistent code layout and a lack of code commenting initially hampered collaboration.
 
 
