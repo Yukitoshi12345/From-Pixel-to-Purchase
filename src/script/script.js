@@ -42,22 +42,15 @@ $(document).ready(()=>{
     function displayArticles(response){
         let title, url;
         response.results.forEach((result, index)=>{
-
             title = result.title;
             url= result.site_detail_url;
-
-            // console.log(`title: ${title}`);
-            // console.log(`url: ${url}`);
             recentArticlesEl.append(`<li class ="hover:text-amber-100 hover:cursor-pointer hover:text-lg border-b-2 border-amber-50" data-url="${url}">${index + 1}.${title}</li>`)
-
         });
     }
     //displays the video of the game on the detail page
     function displayVideo(response){
         let results = response.results;
-        
         let src;
-        
         //look through the results and get the first hd video
         results.forEach(result=>{
             if(result.hd_url!=""){
@@ -93,7 +86,6 @@ $(document).ready(()=>{
             next = index + 1;
             prev = prev < 0 ? images.length - 1 : prev;
             next = next === images.length ? 0 : next;
-            // console.log(`prev is ${prev} and next is ${next}`);
             //putting images in the carousel component
             carouselEl.append(`
                 <div id="slide${index}" class="carousel-item relative w-full">
@@ -125,12 +117,10 @@ $(document).ready(()=>{
     }
     //fetches the game video data when game slug is passed in
     function fetchTheGameVideo(slug){
-        console.log(slug);
         //rawg has titles delimited by - like: the-god-of-war-4
         //gamespot has titles delimited by %20 like: the%20god%20of%20war%204
         //so replacing the rawg delimiter with gamespot delimiter
         const gamespotSlug = slug.replaceAll("-","%20");
-        console.log(gamespotSlug);
         const requestUrl = `https://www.gamespot.com/api/videos/?api_key=${gamespotKey}&format=json&limit=10&filter=title:${gamespotSlug}&categories:[{Trailer},{Games}]`;
         fetchGamespotData(requestUrl);
     }
@@ -257,8 +247,6 @@ $(document).ready(()=>{
             // result.platforms[0].platform.name
             for(result of data.results){
                 const platforms =result.platforms.map(platform => platform.platform.name);
-                // console.log("platforms are ");
-                // console.log(platforms);
                 gameCardsContainer.append(`
                     <div class="card card-compact bg-base-100 shadow-xl  hover:opacity-90">
                         <figure><img src="${result.background_image}" alt="${result.name}"  data-id="${result.background_image}" ></figure>
@@ -408,8 +396,6 @@ $(document).ready(()=>{
     //when recent game articles link is pressed
     recentArticlesEl.on("click", "li", (e)=>{
         const articleUrl = $(e.target).data("url");
-        console.log("article url: ");
-        console.log(articleUrl);
         window.open(articleUrl);
     });
 
@@ -430,7 +416,6 @@ $(document).ready(()=>{
 
     //after typing in user input and pressing Enter key
     inputEl.on("keyup", e =>{
-        console.log("key " + e.key);
         if(e.key === "Enter"){
             e.preventDefault();
             const searchQuery = inputEl.val();
