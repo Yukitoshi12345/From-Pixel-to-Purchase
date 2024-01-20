@@ -485,14 +485,14 @@ $(document).ready(()=>{
         videoEl.attr("src", "" );
      });
 
-     //displays 10 most recent gaming articles
-     function displayTop10RecentArticles(){
+     //displays 5 most recent gaming articles
+     function displayTop5RecentArticles(){
         const url=`https://www.gamespot.com/api/articles/?api_key=${gamespotKey}&format=json&sort=publish_date:desc&limit=5`;
         fetchGamespotData(url, "articles");
      }
      //when the page loads, it shows 
      //the recently searched games and
-     // the top 10 recent games articles
+     // the top 5 recent games articles
      displayRecentSearches();
-     displayTop10RecentArticles();
+     displayTop5RecentArticles();
 })
