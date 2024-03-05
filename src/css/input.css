@@ -1,28 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalnia:wght@500;700&family=Poppins:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalnia:wght@500;700&family=Poppins:ital@0;1&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.data-body{
-    @apply flex flex-wrap gap-2 text-sm ;
+.data-body {
+  @apply flex flex-wrap gap-2 text-sm;
 }
-.data-caption{
-    @apply  text-pink-400;
+.data-caption {
+  @apply text-pink-400;
 }
-.data{
-    @apply text-amber-400  italic;
+.data {
+  @apply text-amber-400  italic;
 }
-.modal-box{
-    @apply min-h-dvh min-w-full ;
+.modal-box {
+  @apply min-h-dvh min-w-full;
 }
-.full{
-    @apply block w-full h-dvh object-contain;
-    
+.full {
+  @apply block w-full h-dvh object-contain;
 }
-.animated-pic{
-    @apply md:w-4/5  absolute  rounded-xl  transition hover:scale-125 duration-1000 ease-out hover:animate-none hover:z-50 ;
+.animated-pic {
+  @apply md:w-4/5  absolute  rounded-xl  transition hover:scale-125 duration-1000 ease-out hover:animate-none hover:z-50;
 }
-.page-center{
-    @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+.page-center {
+  @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
 }
