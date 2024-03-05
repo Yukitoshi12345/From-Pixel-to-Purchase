@@ -1,276 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css" rel="stylesheet" type="text/css">
-    <link href="src/css/output.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.5.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="src/css/output.css" rel="stylesheet" />
     <title>Gaming University</title>
+  </head>
 
-</head>
-
-<body class="bg-[url('../../assets/image/pasted.png')] bg-cover">
+  <body class="bg-[url('../../assets/image/pasted.png')] bg-cover">
     <!-- <body class="bg-[url('/assets/image/pasted.png')] bg-cover"> -->
-     <!-- backdrop -->
-    <div class=" backdrop-blur">
-        <!-- body wrapper -->
-        <div class=" tracking-normal text-indigo-400 font-body pt-4  min-h-dvh ">
-            <header class=" mx-auto shadow shadow-blue-950 text-center ">
-                <h1 class="text-4xl text-amber-400 font-bold font-heading py-4">The University
-                    <span
-                        class=" bg-clip-text text-6xl text-transparent bg-gradient-to-r from-indigo-600 via-indigo-300 to-red-500 font-logo">
-                        of Gaming</span>
-                </h1>
-            </header>
-            <!------------------------------------------------------------------------------------ index-game page  -->
-            <div class="index-game-page">
-                <!--Content md: 5 column grid container-->
-                <div class="flex flex-col text-amber-400 m-3 md:grid md:grid-cols-3 md:gap-10 lg:grid-cols-5">
-                    <div class="md:col-span-1 lg:col-span-1">
-                        <!--Search collapse component-->
-                        <div tabindex="0"
-                            class="collapse collapse-arrow border border-base-300 bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-90 hover:shadow-md ">
-                            <div class="collapse-title text-lg font-medium data-caption bg-white drop-shadow-lg">
-                                Click to See Recently Searched Games
-                            </div>
-                            <div class="collapse-content">
-                                <ul class="text-right recent-search">
-                                    <!--Searched Games go here-->
-                                </ul>
-                            </div>
-                        </div>
-                        <!--Search collapse component End-->
-                        <!--Article collapse component-->
-                        <div tabindex="1"
-                            class="collapse collapse-arrow border border-base-300 bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-90 hover:shadow-md ">
-                            <div class="collapse-title text-lg font-medium data-caption bg-white drop-shadow-lg">
-                                Click to See 5 Most Recent Gaming Articles
-                            </div>
-                            <div class="collapse-content">
-                                <ul class="text-right recent-articles">
-                                    <!--Recent articles go here-->
-                                </ul>
-                            </div>
-                        </div>
-                        <!--Article collapse component End-->
-                    </div>
-                    
-                    <!-- md: 4 columns item -->
-                    <main class=" justify-self-end md:col-span-2 lg:col-span-4 min-h-full">
-                        <!-------------------------------------------------------------- Index page -->
-                        <div class="index-page">
-                            <!-- md: 3 columns grid container -->
-                            <div class="lg:grid lg:grid-cols-3 lg:gap-16">
-                                <!--Left Col -->
-                                <section class="lg:col-span-1 lg:mb-36">
-                                    <h1
-                                        class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
-                                        Click
-                                        <span
-                                            class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-amber-300 to-indigo-700">
-                                            Your Way
-                                        </span>
-                                        to gaming glory!
-                                    </h1>
-                                    <p class="leading-normal text-amber-400 md:text-2xl mb-8 text-center md:text-left">
-                                        Where you can search for any game possibly ever existed & discover the
-                                        uncharted gaming
-                                        world!
-                                    </p>
-
-                                    <form
-                                        class="bg-gray-900 opacity-95 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
-                                        <div class="mb-4">
-                                            <label class="block text-blue-300 py-2 font-bold mb-2" for="game-name">
-                                                Search for a game that is currently haunting you
-                                            </label>
-                                            <input
-                                                class="game-input peer shadow appearance-none border rounded w-full p-3 placeholder-shown:text-white  focus:placeholder:text-purple-500 text-purple-500 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-                                                id="game-name" type="text" placeholder="an epic game that is called ..."
-                                                autofocus required maxlength="50">
-                                            <p
-                                                class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm error-text">
-                                                Please provide a game name.
-                                            </p>
-                                        </div>
-
-                                        <div class="flex items-center justify-between pt-4">
-                                            <button
-                                                class="search bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
-                                                type="button">
-                                                Search
-                                            </button>
-                                        </div>
-                                    </form>
-                                </section>
-                                <!--Left Col End-->
-                                <!--Right Col-->
-                                <div class="relative pt-20 md:pt-8 lg:col-span-2 lg:my-28">
-                                    <img class="animated-pic animate-fliping-card1"
-                                        src="assets/image/peakpx.jpg">
-                                    <img class="animated-pic animate-fliping-card2"
-                                        src="assets/image/god-of-war2.jpg">
-                                    <img class="animated-pic animate-fliping-card3"
-                                        src="assets/image/call-of-duty.jpg">
-                                    <img class="animated-pic animate-fliping-card4"
-                                        src="assets/image/game.jpg">
-                                </div>
-                                <!--Right Col End -->
-                            </div>
-                            <!--Index container End-->
-                        </div>
-                        <!--Index page End-->
-                        <!-------------------------------------------------------------games page / search result page -->
-                        <div class="games-page hidden w-full pb-32 ">
-                            <div class="result-404 page-center flex flex-col gap-10 justify-center items-center text-6xl">
-                                <div class="text-7xl">Sorry!</div>
-                                <div class="text-center">No games were found. <br>
-                                <span class=" inline-block"> Please head back to the homepage to search a game again.</span></div>
-                                <button class="btn btn-error return">Go Back</button>
-                            </div>
-                            <!-- games page wrapper  -->
-                            <div class="games-content flex flex-col justify-between">
-                                <div class="flex justify-end px-4">
-                                    <a href="#" class="return opacity-50 hover:opacity-100"><i
-                                            class="fa-solid fa-arrow-left inline-block pr-1"></i> Back to Index Page</a>
-                                </div>
-                                <div class="games">
-                                    <p></p>
-                                    <!-- game cards go below -->
-                                    <div class="game-cards md:grid md:grid-cols-auto-fill md: gap-4 ">
-                                    </div>
-                                    
-                                    
-                                    <!-- game cards end -->
-                                    <div class="page-nav mx-auto my-3">
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- games page wrapper  -->
-                        </div>
-                        <!-- games-page end -->
-                    </main>
+    <!-- backdrop -->
+    <div class="backdrop-blur">
+      <!-- body wrapper -->
+      <div class="tracking-normal text-indigo-400 font-body pt-4 min-h-dvh">
+        <header class="mx-auto shadow shadow-blue-950 text-center">
+          <h1 class="text-4xl text-amber-400 font-bold font-heading py-4">
+            The University
+            <span
+              class="bg-clip-text text-6xl text-transparent bg-gradient-to-r from-indigo-600 via-indigo-300 to-red-500 font-logo"
+            >
+              of Gaming</span
+            >
+          </h1>
+        </header>
+        <!------------------------------------------------------------------------------------ index-game page  -->
+        <div class="index-game-page">
+          <!--Content md: 5 column grid container-->
+          <div
+            class="flex flex-col text-amber-400 m-3 md:grid md:grid-cols-3 md:gap-10 lg:grid-cols-5"
+          >
+            <div class="md:col-span-1 lg:col-span-1">
+              <!--Search collapse component-->
+              <div
+                tabindex="0"
+                class="collapse collapse-arrow border border-base-300 bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-90 hover:shadow-md"
+              >
+                <div
+                  class="collapse-title text-lg font-medium data-caption bg-white drop-shadow-lg"
+                >
+                  Click to See Recently Searched Games
                 </div>
-                <!--Index and Games page Content End-->
+                <div class="collapse-content">
+                  <ul class="text-right recent-search">
+                    <!--Searched Games go here-->
+                  </ul>
+                </div>
+              </div>
+              <!--Search collapse component End-->
+              <!--Article collapse component-->
+              <div
+                tabindex="1"
+                class="collapse collapse-arrow border border-base-300 bg-gradient-to-r from-cyan-500 to-blue-500 hover:opacity-90 hover:shadow-md"
+              >
+                <div
+                  class="collapse-title text-lg font-medium data-caption bg-white drop-shadow-lg"
+                >
+                  Click to See 5 Most Recent Gaming Articles
+                </div>
+                <div class="collapse-content">
+                  <ul class="text-right recent-articles">
+                    <!--Recent articles go here-->
+                  </ul>
+                </div>
+              </div>
+              <!--Article collapse component End-->
             </div>
-            <!-- index/games page wrapper end  -->
-             <!-- detail page -->
-             <div class="detail-page hidden pb-28">
-                <div class="flex justify-between items-center px-4">
-                    <a href="#" class="return-games opacity-50 hover:opacity-100"><i
-                        class="fa-solid fa-arrow-left inline-block pr-1"></i> Back to Game Page</a>
-                    <a href="#" class="return-index opacity-50 hover:opacity-100"><i
-                        class="fa-solid fa-arrow-left inline-block pr-1"></i><i
-                            class="fa-solid fa-arrow-left inline-block pr-1"></i> Back to Index Page</a>
-                    
+
+            <!-- md: 4 columns item -->
+            <main
+              class="justify-self-end md:col-span-2 lg:col-span-4 min-h-full"
+            >
+              <!-------------------------------------------------------------- Index page -->
+              <div class="index-page">
+                <!-- md: 3 columns grid container -->
+                <div class="lg:grid lg:grid-cols-3 lg:gap-16">
+                  <!--Left Col -->
+                  <section class="lg:col-span-1 lg:mb-36">
+                    <h1
+                      class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left"
+                    >
+                      Click
+                      <span
+                        class="bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-amber-300 to-indigo-700"
+                      >
+                        Your Way
+                      </span>
+                      to gaming glory!
+                    </h1>
+                    <p
+                      class="leading-normal text-amber-400 md:text-2xl mb-8 text-center md:text-left"
+                    >
+                      Where you can search for any game possibly ever existed &
+                      discover the uncharted gaming world!
+                    </p>
+
+                    <form
+                      class="bg-gray-900 opacity-95 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4"
+                    >
+                      <div class="mb-4">
+                        <label
+                          class="block text-blue-300 py-2 font-bold mb-2"
+                          for="game-name"
+                        >
+                          Search for a game that is currently haunting you
+                        </label>
+                        <input
+                          class="game-input peer shadow appearance-none border rounded w-full p-3 placeholder-shown:text-white focus:placeholder:text-purple-500 text-purple-500 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                          id="game-name"
+                          type="text"
+                          placeholder="an epic game that is called ..."
+                          autofocus
+                          required
+                          maxlength="50"
+                        />
+                        <p
+                          class="mt-2 invisible peer-invalid:visible text-pink-600 text-sm error-text"
+                        >
+                          Please provide a game name.
+                        </p>
+                      </div>
+
+                      <div class="flex items-center justify-between pt-4">
+                        <button
+                          class="search bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
+                          type="button"
+                        >
+                          Search
+                        </button>
+                      </div>
+                    </form>
+                  </section>
+                  <!--Left Col End-->
+                  <!--Right Col-->
+                  <div class="relative pt-20 md:pt-8 lg:col-span-2 lg:my-28">
+                    <img
+                      class="animated-pic animate-fliping-card1"
+                      src="assets/image/peakpx.jpg"
+                    />
+                    <img
+                      class="animated-pic animate-fliping-card2"
+                      src="assets/image/god-of-war2.jpg"
+                    />
+                    <img
+                      class="animated-pic animate-fliping-card3"
+                      src="assets/image/call-of-duty.jpg"
+                    />
+                    <img
+                      class="animated-pic animate-fliping-card4"
+                      src="assets/image/game.jpg"
+                    />
+                  </div>
+                  <!--Right Col End -->
                 </div>
-                <!-- detail page wrapper -->
-                <div class="flex flex-col items-center justify-between ">
-                    <!-- <h1>{Game Name}</h1> -->
-                    <!-- carousel -->
-                    <div class="carousel w-3/4 my-4">
-                        <!-- screenshot slide -->
-                    </div>
-                    <!-- carousel end  -->
-                    <!-- game detail wrapper  -->
-                    <div>
-                        <!-- game detail -->
-                        <div
-                            class="flex flex-col items-center gap-x-4 md:grid md:grid-cols-5 md:items-stretch md:justify-center pb-8">
-                            <!-- description /left col  -->
-                            <div
-                                class="justify-self-end md:col-span-3 bg-gray-900 opacity-95 shadow-lg rounded-lg px-8 pt-6 pb-8  w-3/4">
-                                <div class="searched-game-name text-center text-4xl text-amber-400 mb-3">
-                                </div>
-                                <p class=" description text-justify my-5 leading-relaxed"></p>
-                                <div class="developers data-body"></div>
-                                <div class="publishers data-body"></div>
-                                <div class="tags data-body"></div>
-                            </div>
-                            <!-- description left col end  -->
-                            <!-- attributes right col -->
-                            <div class="justify-self-start md:col-span-2">
-                                <!-- card  -->
-                                <div class="card w-96 bg-base-100 shadow-xl">
-                                    <!-- video  -->
-                                    <div class="aspect-video">
-                                        <iframe class="w-full h-full video" src=""
-                                            frameborder="0"
-                                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowfullscreen>
-                                        </iframe>
-                                    </div>
-                                    <!-- video end  -->
-                                    <!-- card body  -->
-                                    <div class="card-body">
-                                        <div class="stats shadow">
-                                            <div class="stat">
-                                                <div class="stat-figure text-secondary">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                        viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current">
-                                                        <path stroke-linecap="round" stroke-linejoin="round"
-                                                            stroke-width="2"
-                                                            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
-                                                        </path>
-                                                    </svg>
-                                                </div>
-                                                <div class="stat-title">Rating</div>
-                                                <div class="stat-value"></div>
-                                                <!-- <div class="stat-desc">Jan 1st - Feb 1st</div> -->
-                                            </div>
-                                        </div>
-                                        <div class="platforms data-body"></div>
-                                        <div class="genres data-body justify-end"></div>
-                                        <div class="released-date data-body"></div>
-                                    </div>
-                                    <!-- card body end -->
-                                </div>
-                                <!-- card end  -->
-                            </div>
-                            <!-- attributes right col end  -->
-                        </div>
-                        <!-- game detail end  -->
-                    </div>
-                    <!-- game detail wrapper end  -->
+                <!--Index container End-->
+              </div>
+              <!--Index page End-->
+              <!-------------------------------------------------------------games page / search result page -->
+              <div class="games-page hidden w-full pb-32">
+                <div
+                  class="result-404 page-center flex flex-col gap-10 justify-center items-center text-6xl"
+                >
+                  <div class="text-7xl">Sorry!</div>
+                  <div class="text-center">
+                    No games were found. <br />
+                    <span class="inline-block">
+                      Please head back to the homepage to search a game
+                      again.</span
+                    >
+                  </div>
+                  <button class="btn btn-error return">Go Back</button>
                 </div>
-                <!-- detail page wrapper end-->
-            </div>
-            <!-- detail page end -->
+                <!-- games page wrapper  -->
+                <div class="games-content flex flex-col justify-between">
+                  <div class="flex justify-end px-4">
+                    <a href="#" class="return opacity-50 hover:opacity-100"
+                      ><i class="fa-solid fa-arrow-left inline-block pr-1"></i>
+                      Back to Index Page</a
+                    >
+                  </div>
+                  <div class="games">
+                    <p></p>
+                    <!-- game cards go below -->
+                    <div
+                      class="game-cards md:grid md:grid-cols-auto-fill md: gap-4"
+                    ></div>
+
+                    <!-- game cards end -->
+                    <div class="page-nav mx-auto my-3"></div>
+                  </div>
+                </div>
+                <!-- games page wrapper  -->
+              </div>
+              <!-- games-page end -->
+            </main>
+          </div>
+          <!--Index and Games page Content End-->
         </div>
-        <!--Body Wrapper End-->
+        <!-- index/games page wrapper end  -->
+        <!-- detail page -->
+        <div class="detail-page hidden pb-28">
+          <div class="flex justify-between items-center px-4">
+            <a href="#" class="return-games opacity-50 hover:opacity-100"
+              ><i class="fa-solid fa-arrow-left inline-block pr-1"></i> Back to
+              Game Page</a
+            >
+            <a href="#" class="return-index opacity-50 hover:opacity-100"
+              ><i class="fa-solid fa-arrow-left inline-block pr-1"></i
+              ><i class="fa-solid fa-arrow-left inline-block pr-1"></i> Back to
+              Index Page</a
+            >
+          </div>
+          <!-- detail page wrapper -->
+          <div class="flex flex-col items-center justify-between">
+            <!-- <h1>{Game Name}</h1> -->
+            <!-- carousel -->
+            <div class="carousel w-3/4 my-4">
+              <!-- screenshot slide -->
+            </div>
+            <!-- carousel end  -->
+            <!-- game detail wrapper  -->
+            <div>
+              <!-- game detail -->
+              <div
+                class="flex flex-col items-center gap-x-4 md:grid md:grid-cols-5 md:items-stretch md:justify-center pb-8"
+              >
+                <!-- description /left col  -->
+                <div
+                  class="justify-self-end md:col-span-3 bg-gray-900 opacity-95 shadow-lg rounded-lg px-8 pt-6 pb-8 w-3/4"
+                >
+                  <div
+                    class="searched-game-name text-center text-4xl text-amber-400 mb-3"
+                  ></div>
+                  <p class="description text-justify my-5 leading-relaxed"></p>
+                  <div class="developers data-body"></div>
+                  <div class="publishers data-body"></div>
+                  <div class="tags data-body"></div>
+                </div>
+                <!-- description left col end  -->
+                <!-- attributes right col -->
+                <div class="justify-self-start md:col-span-2">
+                  <!-- card  -->
+                  <div class="card w-96 bg-base-100 shadow-xl">
+                    <!-- video  -->
+                    <div class="aspect-video">
+                      <iframe
+                        class="w-full h-full video"
+                        src=""
+                        frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      >
+                      </iframe>
+                    </div>
+                    <!-- video end  -->
+                    <!-- card body  -->
+                    <div class="card-body">
+                      <div class="stats shadow">
+                        <div class="stat">
+                          <div class="stat-figure text-secondary">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              class="inline-block w-8 h-8 stroke-current"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                              ></path>
+                            </svg>
+                          </div>
+                          <div class="stat-title">Rating</div>
+                          <div class="stat-value"></div>
+                          <!-- <div class="stat-desc">Jan 1st - Feb 1st</div> -->
+                        </div>
+                      </div>
+                      <div class="platforms data-body"></div>
+                      <div class="genres data-body justify-end"></div>
+                      <div class="released-date data-body"></div>
+                    </div>
+                    <!-- card body end -->
+                  </div>
+                  <!-- card end  -->
+                </div>
+                <!-- attributes right col end  -->
+              </div>
+              <!-- game detail end  -->
+            </div>
+            <!-- game detail wrapper end  -->
+          </div>
+          <!-- detail page wrapper end-->
+        </div>
+        <!-- detail page end -->
+      </div>
+      <!--Body Wrapper End-->
     </div>
     <!--back drop End-->
     <!--Footer-->
-    <footer class="fixed right-0 bottom-0 p-6 text-sm text-center md:text-right fade-in bg-slate-50 w-full">
-        &copy; Group4 2024 - edX Coding Bootcamp @ The University of Sydney
-        - Template by
-        <a class="text-amber-800 no-underline hover:no-underline"
-            href="https://www.tailwindtoolbox.com">TailwindToolbox.com</a>
+    <footer
+      class="fixed right-0 bottom-0 p-6 text-sm text-center md:text-right fade-in bg-slate-50 w-full"
+    >
+      &copy; Group4 2024 - edX Coding Bootcamp @ The University of Sydney -
+      Template by
+      <a
+        class="text-amber-800 no-underline hover:no-underline"
+        href="https://www.tailwindtoolbox.com"
+        >TailwindToolbox.com</a
+      >
     </footer>
     <!--Footer End-->
     <!-- arrow to top  -->
-    <div class="fixed bottom-20 right-4 z-10"><a href="#top"><i
-                class="fa-solid fa-arrow-up text-4xl opacity-35 text-amber-50 hover:text-5xl hover:opacity-100"></i></a>
+    <div class="fixed bottom-20 right-4 z-10">
+      <a href="#top"
+        ><i
+          class="fa-solid fa-arrow-up text-4xl opacity-35 text-amber-50 hover:text-5xl hover:opacity-100"
+        ></i
+      ></a>
     </div>
     <!-- arrow to top end -->
-    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle ">
-        <div class="modal-box">
-          <div class="modal-action">
-            <form method="dialog">
-              <!-- if there is a button in form, it will close the modal -->
-              <button class="btn">Close</button>
-            </form>
-          </div>
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box">
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
         </div>
+      </div>
     </dialog>
-    
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="src/script/script.js"></script>
-</body>
 
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="src/script/script.js"></script>
+  </body>
 </html>
